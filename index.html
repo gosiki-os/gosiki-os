@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gosiki OS - Local AI Runtime Layer</title>
+    <meta name="description" content="A unified OS-like runtime for all AI development tools. End port hell forever.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🌐</span>
+                <span class="logo-text">Gosiki OS</span>
+            </div>
+            <nav class="nav">
+                <a href="#features">Features</a>
+                <a href="#install">Install</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="https://github.com/gosiki-os/gosiki-os" target="_blank" class="github-link">
+                    GitHub →
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Local AI Runtime Layer</h1>
+            <p class="hero-subtitle">
+                A unified OS-like runtime for all AI development tools.<br>
+                <strong>End port hell forever.</strong>
+            </p>
+            <div class="hero-buttons">
+                <a href="#install" class="btn btn-primary">Get Started</a>
+                <a href="https://github.com/gosiki-os/gosiki-os" target="_blank" class="btn btn-secondary">View on GitHub</a>
+            </div>
+            <div class="hero-badge">
+                <span class="badge">Phase 1a</span>
+                <span class="badge">v0.1.0</span>
+                <span class="badge">Windows 10/11</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <h2>The Problem</h2>
+            <p class="section-subtitle">AI coding tools frequently cause chaos in your local environment</p>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">⚠️</div>
+                    <h3>Port Conflicts</h3>
+                    <p>Multiple AI agents fight over ports 3000-3999, causing random failures</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🧟</div>
+                    <h3>Zombie Processes</h3>
+                    <p>Background servers left running, consuming resources indefinitely</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🔑</div>
+                    <h3>Credential Chaos</h3>
+                    <p>Tokens and secrets scattered across tools with no central management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Phase 1a: Port Manager</h2>
+            <p class="section-subtitle">The first piece of Gosiki OS - end port conflicts forever</p>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>✅ Port Acquisition</h3>
+                    <p>Automatically find and allocate available ports</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📝 Registry Management</h3>
+                    <p>Track allocated ports in <code>~/.gosiki-os/port-registry.json</code></p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔓 Port Release</h3>
+                    <p>Free up allocated ports when you're done</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 List Allocations</h3>
+                    <p>View all currently allocated ports with metadata</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Install Section -->
+    <section id="install" class="install">
+        <div class="container">
+            <h2>Installation</h2>
+
+            <div class="install-box">
+                <h3>npm Package</h3>
+                <pre><code>npm install @gosiki-os/port-manager</code></pre>
+            </div>
+
+            <div class="code-examples">
+                <div class="code-example">
+                    <h3>CLI Usage</h3>
+                    <pre><code># Acquire a port
+npx @gosiki-os/port-manager 3000
+
+# Release a port
+npx @gosiki-os/port-manager --release 3001
+
+# List all allocations
+npx @gosiki-os/port-manager --list
+
+# Show help
+npx @gosiki-os/port-manager --help</code></pre>
+                </div>
+
+                <div class="code-example">
+                    <h3>Node.js API</h3>
+                    <pre><code>import { acquirePort, releasePort, listAllocations } from '@gosiki-os/port-manager';
+
+// Acquire a port
+const port = await acquirePort(3000);
+console.log(`Using port ${port}`);
+
+// Release a port
+await releasePort(port);
+
+// List all allocations
+const allocations = await listAllocations();</code></pre>
+                </div>
+            </div>
+
+            <div class="execution-warning">
+                <h3>⚠️ Execution Requirements</h3>
+                <div class="warning-content">
+                    <div class="warning-section">
+                        <h4>✅ Supported</h4>
+                        <ul>
+                            <li>Claude Code Terminal (VS Code)</li>
+                            <li>Windows 10/11 (PowerShell + Node.js v18+)</li>
+                            <li>macOS/Linux/WSL2 (coming in v0.2)</li>
+                        </ul>
+                    </div>
+                    <div class="warning-section">
+                        <h4>❌ Not Supported</h4>
+                        <ul>
+                            <li>ChatGPT WebUI/Desktop</li>
+                            <li>Claude WebUI</li>
+                            <li>Cursor AI Editor</li>
+                            <li>GitHub Codespaces/Cloud Shell</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="warning-note">
+                    <strong>You MUST run this in Claude Code Terminal (VS Code).</strong><br>
+                    Browser-based AI environments cannot access your local OS.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="roadmap">
+        <div class="container">
+            <h2>Roadmap</h2>
+            <p class="section-subtitle">Building the future of AI-assisted development</p>
+
+            <div class="roadmap-timeline">
+                <div class="roadmap-item current">
+                    <div class="roadmap-badge">Phase 1a</div>
+                    <h3>Port Manager</h3>
+                    <p>✅ Available Now (v0.1.0)</p>
+                    <ul>
+                        <li>Port acquisition & release</li>
+                        <li>Registry management</li>
+                        <li>Windows 10/11 support</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="roadmap-badge">Phase 1b-1c</div>
+                    <h3>Process Manager & Folder Policy</h3>
+                    <p>Q1 2026</p>
+                    <ul>
+                        <li>Process lifecycle management</li>
+                        <li>Zombie cleanup</li>
+                        <li>Workspace structure enforcement</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="roadmap-badge">Phase 2</div>
+                    <h3>IDE Abstraction Layer</h3>
+                    <p>Q2-Q3 2026</p>
+                    <ul>
+                        <li>Cursor support</li>
+                        <li>Multi-IDE compatibility</li>
+                        <li>Unified adapter system</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="roadmap-badge">Phase 3</div>
+                    <h3>Boundary OS</h3>
+                    <p>Q4 2026</p>
+                    <ul>
+                        <li>Token Manager</li>
+                        <li>GitHub Auth layer</li>
+                        <li>Complete AI chaos prevention</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to end port hell?</h2>
+            <p>Start using Gosiki OS Port Manager today</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/gosiki-os/gosiki-os" target="_blank" class="btn btn-primary btn-large">
+                    Get Started on GitHub
+                </a>
+                <pre class="install-command"><code>npm install @gosiki-os/port-manager</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Gosiki OS</h4>
+                    <p>Local AI Runtime Layer</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <a href="https://github.com/gosiki-os/gosiki-os">GitHub</a>
+                    <a href="https://github.com/gosiki-os/gosiki-os/issues">Issues</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <a href="mailto:gosiki.org@gmail.com">gosiki.org@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gosiki OS Project. MIT License.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
