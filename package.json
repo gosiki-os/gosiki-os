@@ -21,5 +21,10 @@
   "homepage": "https://gosiki.dev",
   "engines": {
     "node": ">=18"
-  }
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ]
 }
