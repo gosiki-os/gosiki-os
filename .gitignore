@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+coverage/
+.cache/
+
+# IDE
+.vscode/
+.idea/
+.cursor/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Local configs
+*.local.json
+*-local.json
+
+# Registry data (runtime generated)
+**/registry/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Secrets (should never be here)
+secrets/
+.secrets/
+token-store/
+
