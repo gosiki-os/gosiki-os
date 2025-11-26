@@ -19,7 +19,7 @@ Linux / macOS / WSL2 support coming in v0.2+
 
 ## What is this?
 This is the first piece of Gosiki OS L2 Runtime.
-A divine 41-line module to end port hell.
+A 41-line module to end port hell.
 
 ## Roadmap
 - v0.2 ProcessManager
