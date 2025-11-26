@@ -40,6 +40,41 @@ npx @gosiki-os/port-manager --help
 ✅ **List Allocations** - View all currently allocated ports
 ✅ **Windows Support** - Full Windows 10/11 support (no admin required)
 
+## ⚠ Execution Requirements (Important)
+
+`@gosiki-os/port-manager` is a **local OS-level tool**.
+It requires actual access to your filesystem, process table, and network ports.
+
+Because of these restrictions:
+
+### ✅ Supported Environments
+- **Claude Code – VS Code Terminal**
+- **Claude Code CLI**
+- **Windows 10 / 11** (PowerShell + Node.js v18+)
+- **macOS / Linux / WSL2** (coming in v0.2)
+
+### ❌ Not Supported (Will NOT work)
+These environments **cannot access your local OS**, so the tool cannot run:
+
+- ChatGPT WebUI (browser sandbox prevents local execution)
+- ChatGPT Desktop App
+- Claude WebUI
+- Cursor AI Editor (browser sandbox cannot manage ports/processes)
+- Antigravity "AI-only mode" (insufficient local privileges)
+- GitHub Codespaces / Cloud Shell
+
+### Why?
+Port Manager needs:
+- Local process scanning
+- Port probing
+- PowerShell / lsof
+- True filesystem access
+- Node.js execution
+
+Browser-based AI environments **cannot** perform these operations.
+
+➡ **You MUST run this in Claude Code Terminal (VS Code).**
+
 ## API Reference
 
 ### `acquirePort(preferred, range)`
