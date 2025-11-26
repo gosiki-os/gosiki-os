@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gosiki OS - Local AI Runtime Layer</title>
     <meta name="description" content="A unified OS-like runtime for all AI development tools. End port hell forever.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="background-glow"></div>
+    
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
-                <span class="logo-icon">🌐</span>
-                <span class="logo-text">Gosiki OS</span>
+                <img src="gosiki-os_log.png" alt="Gosiki OS Logo" class="logo-img">
+                <!-- <span class="logo-text">Gosiki OS</span> -->
             </div>
             <nav class="nav">
                 <a href="#features">Features</a>
@@ -29,19 +35,26 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1 class="hero-title">Local AI Runtime Layer</h1>
-            <p class="hero-subtitle">
-                A unified OS-like runtime for all AI development tools.<br>
-                <strong>End port hell forever.</strong>
-            </p>
-            <div class="hero-buttons">
-                <a href="#install" class="btn btn-primary">Get Started</a>
-                <a href="https://github.com/gosiki-os/gosiki-os" target="_blank" class="btn btn-secondary">View on GitHub</a>
-            </div>
-            <div class="hero-badge">
-                <span class="badge">Phase 1a</span>
-                <span class="badge">v0.1.0</span>
-                <span class="badge">Windows 10/11</span>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Local AI Runtime Layer</h1>
+                    <p class="hero-subtitle">
+                        A unified OS-like runtime for all AI development tools.<br>
+                        <strong>End port hell forever.</strong>
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#install" class="btn btn-primary">Get Started</a>
+                        <a href="https://github.com/gosiki-os/gosiki-os" target="_blank" class="btn btn-secondary">View on GitHub</a>
+                    </div>
+                    <div class="hero-badge">
+                        <span class="badge">Phase 1a</span>
+                        <span class="badge">v0.1.0</span>
+                        <span class="badge">Windows 10/11</span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="gosiki-os_banner.png" alt="Gosiki OS Banner" class="banner-img">
+                </div>
             </div>
         </div>
     </section>
@@ -105,7 +118,9 @@
 
             <div class="install-box">
                 <h3>npm Package</h3>
-                <pre><code>npm install @gosiki-os/port-manager</code></pre>
+                <div class="copy-wrapper">
+                    <pre><code>npm install @gosiki-os/port-manager</code></pre>
+                </div>
             </div>
 
             <div class="code-examples">
@@ -232,7 +247,7 @@ const allocations = await listAllocations();</code></pre>
                 <a href="https://github.com/gosiki-os/gosiki-os" target="_blank" class="btn btn-primary btn-large">
                     Get Started on GitHub
                 </a>
-                <pre class="install-command"><code>npm install @gosiki-os/port-manager</code></pre>
+                <div class="install-command"><code>npm install @gosiki-os/port-manager</code></div>
             </div>
         </div>
     </section>
