@@ -1,37 +1,37 @@
 # GosikiOS Basic App Example
 
-最小限のアプリケーション例です。Port Manager を使ってポート管理を行う基本的なパターンを示しています。
+A minimal application example. This demonstrates the basic pattern for port management using Port Manager.
 
-## セットアップ
+## Setup
 
 ```bash
 cd examples/basic-app
-npm install  # 依存関係がある場合のみ
+npm install  # Only if dependencies exist
 ```
 
-## 実行
+## Running
 
 ```bash
 npm start
-# または
+# or
 node index.mjs
 ```
 
-## コードの説明
+## Code Explanation
 
 ```javascript
 import { PortManager } from '../../core/port-manager/index.mjs';
 
 const pm = new PortManager();
 
-// ポート割り当て
+// Port allocation
 const port = await pm.allocate(undefined, {
   app: 'basic-app',
   worktree: 'main',
   service: 'http-server'
 });
 
-// 終了時にポート解放
+// Release port on exit
 process.on('SIGINT', async () => {
   await pm.release(port);
   process.exit(0);
@@ -40,53 +40,53 @@ process.on('SIGINT', async () => {
 
 ---
 
-## 本番環境での使用方法
+## Production Usage
 
-このデモを本番環境で使う場合の移行パスを説明します。
+This section explains the migration path for using this demo in production environments.
 
-### Phase 1（現在、v0.1.x）
+### Phase 1 (Current, v0.1.x)
 
-**相対パスでimport**
+**Import with relative paths**
 
 ```javascript
-// あなたのプロジェクトから相対パスで参照
+// Reference from your project using relative paths
 import { PortManager } from './path/to/gosiki/core/port-manager/index.mjs';
 
 const pm = new PortManager();
 const port = await pm.allocate();
 ```
 
-### Phase 2（npm化後、v1.0.0~）
+### Phase 2 (After npm publication, v1.0.0+)
 
-**npm packageとしてimport**
+**Import as npm package**
 
 ```bash
-# npm installで追加
+# Install via npm
 npm install @gosiki-os/port-manager
 ```
 
 ```javascript
-// npm packageとしてimport
+// Import as npm package
 import { PortManager } from '@gosiki-os/port-manager';
 
 const pm = new PortManager();
 const port = await pm.allocate();
 ```
 
-### 設定のカスタマイズ
+### Configuration Customization
 
-本番環境では設定をカスタマイズできます:
+In production environments, you can customize the configuration:
 
 ```javascript
 const pm = new PortManager({
-  // ポート範囲を指定
+  // Specify port range
   range: { start: 8000, end: 8999 },
 
-  // レジストリファイルの場所
+  // Registry file location
   registryPath: '/var/app/gosiki-ports.json'
 });
 
-// メタデータを付与
+// Add metadata
 const port = await pm.allocate(undefined, {
   app: 'my-production-app',
   worktree: 'production',
@@ -95,9 +95,9 @@ const port = await pm.allocate(undefined, {
 });
 ```
 
-### エラーハンドリング
+### Error Handling
 
-本番環境では適切なエラーハンドリングが必要です:
+Production environments require proper error handling:
 
 ```javascript
 try {
@@ -105,7 +105,7 @@ try {
   console.log(`Server started on port ${port}`);
 } catch (error) {
   if (error.message.includes('No available ports')) {
-    // フォールバック処理
+    // Fallback processing
     console.error('All ports are in use, trying alternative range...');
     const fallbackPm = new PortManager({
       range: { start: 9000, end: 9999 }
@@ -118,12 +118,12 @@ try {
 }
 ```
 
-### グループ割り当ての使用
+### Using Group Allocation
 
-複数のサービス（frontend, backend, database等）を同時に管理する場合:
+When managing multiple services simultaneously (frontend, backend, database, etc.):
 
 ```javascript
-// グループ割り当て
+// Group allocation
 const group = await pm.allocateGroup(3,
   { app: 'my-app', worktree: 'production' },
   ['frontend', 'backend', 'database']
@@ -134,29 +134,29 @@ console.log(`  Frontend: ${group.ports.frontend}`);
 console.log(`  Backend: ${group.ports.backend}`);
 console.log(`  Database: ${group.ports.database}`);
 
-// 使用後は一括解放
+// Batch release after use
 await pm.releaseGroup(group.groupId);
 ```
 
 ---
 
-## Phase 1b以降の機能追加（v0.2.0~）
+## Features Added in Phase 1b and Later (v0.2.0+)
 
-v0.2.0（Phase 1b）では Process Manager が追加されます:
+Process Manager will be added in v0.2.0 (Phase 1b):
 
 ```javascript
 import { ProcessManager } from '@gosiki-os/process-manager';
 
 const procManager = new ProcessManager();
 
-// プロセスの起動とポート管理を統合
+// Integrate process startup and port management
 const process = await procManager.start('node', ['server.js'], {
   port,
   app: 'my-app',
   worktree: 'production'
 });
 
-// プロセスの監視
+// Monitor processes
 procManager.on('exit', (proc) => {
   console.log(`Process ${proc.pid} exited`);
   pm.release(proc.port);
@@ -165,7 +165,7 @@ procManager.on('exit', (proc) => {
 
 ---
 
-## 参考資料
+## References
 
 - [Port Manager API Reference](../../core/port-manager/README.md)
 - [GosikiOS Protocol](../../docs/gosiki-protocol.md)
@@ -173,31 +173,31 @@ procManager.on('exit', (proc) => {
 
 ---
 
-## トラブルシューティング
+## Troubleshooting
 
-### ポートが割り当てられない
+### Port Cannot Be Allocated
 
 ```bash
-# ポート使用状況を確認
+# Check port usage status
 node ../../core/port-manager/cli.mjs --list
 
-# または
+# or
 node ../../core/port-manager/cli.mjs --dashboard
 ```
 
-### レジストリのクリーンアップ
+### Registry Cleanup
 
 ```bash
-# 全ポート割り当てをクリア
+# Clear all port allocations
 node ../../core/port-manager/cli.mjs --cleanup
 ```
 
-### 特定のポートを確認
+### Check Specific Port
 
 ```bash
-# ポートが使われているか確認
+# Check if port is in use
 node ../../core/port-manager/cli.mjs --detect 3000
 
-# プロセスを強制終了
+# Force kill process
 node ../../core/port-manager/cli.mjs --kill-port 3000 --force
 ```

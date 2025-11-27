@@ -1,21 +1,85 @@
-# @gosiki-os/port-manager v0.1.0
+# @gosiki-os/port-manager v0.1.1
 
 **A world where 10 AI agents can run simultaneously without port conflicts**
 
 ```js
-import { acquirePort, releasePort, listAllocations } from '@gosiki-os/port-manager';
+import { PortManager } from '@gosiki-os/port-manager';
 
-// Acquire a port
-const port = await acquirePort(3000);
+const pm = new PortManager();
+
+// Allocate a port
+const port = await pm.allocate();
 console.log(`Using port ${port}`);
 
 // Release a port
-await releasePort(port);
+await pm.release(port);
 
 // List all allocations
-const allocations = await listAllocations();
+const allocations = await pm.listAll();
 console.log(allocations);
 ```
+
+---
+
+## 🚀 Quick Start
+
+### Try the Demo (5 minutes)
+
+```bash
+# Clone the repository
+git clone https://github.com/gosiki-os/gosiki-os
+cd gosiki-os
+
+# Install dependencies
+npm install
+
+# Run the demo
+npm run demo
+```
+
+The demo will show you:
+- ✅ Port allocation
+- ✅ Group allocation (frontend, backend, test)
+- ✅ Dashboard visualization
+- ✅ Automatic cleanup
+
+### Try the Basic App Example
+
+```bash
+cd examples/basic-app
+node index.mjs
+```
+
+### Use in Your Project
+
+**Phase 1 (current, v0.1.x)**:
+```javascript
+// Import from relative path
+import { PortManager } from './path/to/gosiki/core/port-manager/index.mjs';
+
+const pm = new PortManager();
+const port = await pm.allocate();
+console.log(`Allocated port: ${port}`);
+```
+
+**Phase 2 (npm package, v1.0.0+)**:
+```bash
+npm install @gosiki-os/port-manager
+```
+
+```javascript
+// Import as npm package
+import { PortManager } from '@gosiki-os/port-manager';
+```
+
+### Learn More
+
+- [Examples](examples/) - Working code samples
+- [Basic App Example](examples/basic-app/README.md) - Migration path to production
+- [Demo CLI](examples/demo-cli/README.md) - Interactive demonstration
+- [Port Manager API](core/port-manager/README.md) - Full API reference
+
+---
 
 ## Try it in 3 seconds
 ```bash

@@ -1,34 +1,34 @@
 # GosikiOS Demo CLI
 
-GosikiOS Phase 1a (Port Manager) の基本機能をデモンストレーションします。
+Demonstrates the core features of GosikiOS Phase 1a (Port Manager).
 
-## 実行方法
+## How to Run
 
-### ルートディレクトリから
+### From the Root Directory
 
 ```bash
-# npm scriptで実行
+# Run with npm script
 npm run demo
 
-# または直接実行
+# Or run directly
 node examples/demo-cli/index.mjs
 ```
 
-### このディレクトリから
+### From This Directory
 
 ```bash
 cd examples/demo-cli
 node index.mjs
 ```
 
-## デモ内容
+## Demo Features
 
-1. **ポート割り当て**: 単一ポートの自動割り当て
-2. **グループ割り当て**: 複数ポート（frontend, backend, test）の一括割り当て
-3. **ダッシュボード表示**: 割り当て状況の可視化
-4. **クリーンアップ**: ポート解放
+1. **Port Allocation**: Automatic allocation of a single port
+2. **Group Allocation**: Batch allocation of multiple ports (frontend, backend, test)
+3. **Dashboard Display**: Visualization of allocation status
+4. **Cleanup**: Port release
 
-## 次のステップ
+## Next Steps
 
-- [基本アプリケーション例](../basic-app/README.md) - 実際のアプリケーションでの使用例
-- [Port Manager API](../../core/port-manager/README.md) - 詳細なAPI仕様
+- [Basic App Example](../basic-app/README.md) - Usage example in a real application
+- [Port Manager API](../../core/port-manager/README.md) - Detailed API specification
