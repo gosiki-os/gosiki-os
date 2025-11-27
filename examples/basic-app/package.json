@@ -1,0 +1,17 @@
+{
+  "name": "gosiki-basic-app",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "GosikiOS Basic App Example",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "keywords": [
+    "gosiki",
+    "example",
+    "basic-app"
+  ],
+  "author": "",
+  "license": "MIT"
+}
