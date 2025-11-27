@@ -123,8 +123,14 @@ export async function listAllocations() {
   }));
 }
 
-// CLI execution
-if (import.meta.url === `file://${process.argv[1]}`) {
+// CLI execution - Check if this file is being run directly
+const scriptPath = fileURLToPath(import.meta.url);
+const isMainModule = process.argv[1] && (
+  scriptPath === process.argv[1] ||
+  scriptPath.replace(/\\/g, '/') === process.argv[1].replace(/\\/g, '/')
+);
+
+if (isMainModule) {
   const command = process.argv[2];
 
   if (command === '--release' || command === '-r') {
