@@ -1,0 +1,17 @@
+{
+  "name": "gosiki-demo-cli",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "GosikiOS Demo CLI - Phase 1a",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "keywords": [
+    "gosiki",
+    "demo",
+    "port-manager"
+  ],
+  "author": "",
+  "license": "MIT"
+}
