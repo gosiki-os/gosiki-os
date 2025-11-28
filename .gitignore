@@ -43,3 +43,7 @@ secrets/
 .secrets/
 token-store/
 
+
+# KAMUI and worktree metadata
+.kamui/
+.worktrees/
