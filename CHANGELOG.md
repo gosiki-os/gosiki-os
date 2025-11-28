@@ -8,14 +8,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.3] - 2025-11-28
 
 ### Added
+- **Label/Group support** - Assign labels to ports with `--label` flag (e.g., `--label frontend`)
+- **Username masking** - Display `<username>` instead of actual username in all outputs for privacy
+- **Post-install message** - Show registry location and quick start guide after installation
+- **Demo scripts** - Added `scripts/demo.sh` for recording demonstration videos
 - Enhanced port status display showing PID for managed ports
 - System-wide port status visibility in `--list` command
 - Distinction between managed and not managed ports in output
+- Registry path display in all commands (acquire, list, release)
 
 ### Fixed
 - **Critical**: Registry check now prevents double port allocation
 - Port allocation now verifies both system AND registry before assigning ports
 - Automatic cleanup of stale registry entries when processes end
+
+### Changed
+- CLI help updated to v0.1.3 with new label examples
+- Registry schema now includes optional `label` field
 
 ## [0.1.2] - 2025-11-28
 

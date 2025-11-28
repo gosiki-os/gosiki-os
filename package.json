@@ -29,12 +29,13 @@
   "engines": {
     "node": ">=18"
   },
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js"
+  },
   "files": [
     "src/",
+    "scripts/",
     "README.md",
     "LICENSE"
-  ],
-  "dependencies": {
-    "@gosiki-os/port-manager": "^0.1.1"
-  }
+  ]
 }

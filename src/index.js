@@ -13,6 +13,17 @@ const REGISTRY_DIR = join(homedir(), '.gosiki-os');
 const REGISTRY_FILE = join(REGISTRY_DIR, 'port-registry.json');
 
 /**
+ * Get display path with username masked
+ * @param {string} path - Full file path
+ * @returns {string} Path with username replaced by <username>
+ */
+function getDisplayPath(path) {
+  const home = homedir();
+  const username = home.split(/[/\\]/).pop();
+  return path.replace(username, '<username>');
+}
+
+/**
  * Ensure registry directory exists
  */
 function ensureRegistryDir() {
@@ -100,9 +111,10 @@ async function isPortFree(port, registry) {
  * Acquire an available port (with registry tracking)
  * @param {number} preferred - Preferred port (default: 3000)
  * @param {number} range - Search range (default: 100)
+ * @param {string} label - Optional label for the port allocation
  * @returns {Promise<number>}
  */
-export async function acquirePort(preferred = 3000, range = 100) {
+export async function acquirePort(preferred = 3000, range = 100, label = null) {
   const registry = loadRegistry();
 
   for (let port = preferred; port < preferred + range; port++) {
@@ -110,11 +122,14 @@ export async function acquirePort(preferred = 3000, range = 100) {
       // Port is free, allocate it
       registry.allocations[port] = {
         allocatedAt: new Date().toISOString(),
-        pid: process.pid
+        pid: process.pid,
+        label: label
       };
       saveRegistry(registry);
 
-      console.log(`Port ${port} acquired ✓`);
+      const labelText = label ? ` [${label}]` : '';
+      console.log(`Port ${port} acquired ✓${labelText}`);
+      console.log(`Registry: ${getDisplayPath(REGISTRY_FILE)}`);
       return port;
     } else {
       // Port is in use - check why
@@ -188,6 +203,7 @@ if (isMainModule) {
       process.exit(1);
     }
     await releasePort(port);
+    console.log(`Registry: ${getDisplayPath(REGISTRY_FILE)}`);
 
   } else if (command === '--list' || command === '-l') {
     const registry = loadRegistry();
@@ -206,6 +222,7 @@ if (isMainModule) {
     }
 
     console.log('Port Status:');
+    console.log(`Registry: ${getDisplayPath(REGISTRY_FILE)}\n`);
     const sortedPorts = Array.from(portsToCheck).sort((a, b) => a - b);
     let hasAnyPort = false;
 
@@ -215,7 +232,8 @@ if (isMainModule) {
 
       if (systemPid && managed) {
         // Managed by Gosiki and currently in use
-        console.log(`  ${port} - managed by Gosiki (PID: ${managed.pid}) ✓`);
+        const label = managed.label ? ` [${managed.label}]` : '';
+        console.log(`  ${port} - managed by Gosiki (PID: ${managed.pid})${label} ✓`);
         hasAnyPort = true;
       } else if (systemPid) {
         // In use but not managed by Gosiki
@@ -223,7 +241,8 @@ if (isMainModule) {
         hasAnyPort = true;
       } else if (managed) {
         // Managed but process ended (stale entry)
-        console.log(`  ${port} - managed but process ended (PID: ${managed.pid}) [stale]`);
+        const label = managed.label ? ` [${managed.label}]` : '';
+        console.log(`  ${port} - managed but process ended (PID: ${managed.pid})${label} [stale]`);
         hasAnyPort = true;
       }
     }
@@ -234,27 +253,43 @@ if (isMainModule) {
 
   } else if (command === '--help' || command === '-h') {
     console.log(`
-@gosiki-os/port-manager v0.1.0
+@gosiki-os/port-manager v0.1.3
 
 Usage:
-  npx @gosiki-os/port-manager [port]           Acquire a port (default: 3000)
-  npx @gosiki-os/port-manager --release <port> Release a port
-  npx @gosiki-os/port-manager --list           List all allocations
-  npx @gosiki-os/port-manager --help           Show this help
+  npx @gosiki-os/port-manager [port] [--label <name>]  Acquire a port (default: 3000)
+  npx @gosiki-os/port-manager --release <port>         Release a port
+  npx @gosiki-os/port-manager --list                   List all allocations
+  npx @gosiki-os/port-manager --help                   Show this help
 
 Examples:
-  npx @gosiki-os/port-manager 3000             Acquire port starting from 3000
-  npx @gosiki-os/port-manager --release 3001   Release port 3001
-  npx @gosiki-os/port-manager --list           Show all allocated ports
+  npx @gosiki-os/port-manager 3000                     Acquire port starting from 3000
+  npx @gosiki-os/port-manager --label frontend         Acquire port with label
+  npx @gosiki-os/port-manager 3000 --label backend     Acquire specific port with label
+  npx @gosiki-os/port-manager --release 3001           Release port 3001
+  npx @gosiki-os/port-manager --list                   Show all allocated ports
     `);
 
   } else {
-    const preferred = command ? parseInt(command, 10) : 3000;
-    if (isNaN(preferred)) {
-      console.error('Usage: npx @gosiki-os/port-manager [preferred-port]');
-      process.exit(1);
+    // Parse arguments for port acquisition
+    let preferred = 3000;
+    let label = null;
+
+    // Check for --label flag
+    const labelIndex = process.argv.indexOf('--label');
+    if (labelIndex !== -1 && process.argv[labelIndex + 1]) {
+      label = process.argv[labelIndex + 1];
     }
-    const port = await acquirePort(preferred);
+
+    // Get preferred port (if not a flag)
+    if (command && !command.startsWith('--')) {
+      preferred = parseInt(command, 10);
+      if (isNaN(preferred)) {
+        console.error('Usage: npx @gosiki-os/port-manager [preferred-port] [--label <name>]');
+        process.exit(1);
+      }
+    }
+
+    const port = await acquirePort(preferred, 100, label);
     process.stdout.write(port.toString());
   }
 }

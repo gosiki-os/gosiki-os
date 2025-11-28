@@ -175,15 +175,24 @@ npx @gosiki-os/port-manager
 # Acquire from specific port
 npx @gosiki-os/port-manager 8080
 
+# Acquire with label (v0.1.3+)
+npx @gosiki-os/port-manager --label frontend
+npx @gosiki-os/port-manager 8080 --label backend
+
 # Release a port
 npx @gosiki-os/port-manager --release 3001
 
-# List all allocations
+# List all allocations (shows labels and registry location)
 npx @gosiki-os/port-manager --list
 
 # Show help
 npx @gosiki-os/port-manager --help
 ```
+
+**New in v0.1.3**:
+- 🏷️ **Labels**: Organize ports with labels (`--label frontend`, `--label backend`)
+- 🔒 **Privacy**: Username masked as `<username>` in all outputs
+- 📁 **Registry Location**: Displayed in all commands for transparency
 
 ## Current Status
 

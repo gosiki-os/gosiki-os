@@ -1,0 +1,91 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="128" height="128" rx="24" fill="#111827"/>
+
+  <!-- Outer glow -->
+  <rect x="4" y="4" width="120" height="120" rx="20" fill="url(#glow)" opacity="0.3"/>
+
+  <!-- Paint palette (main element) -->
+  <g transform="translate(24, 32)">
+    <!-- Palette base -->
+    <ellipse cx="40" cy="32" rx="36" ry="28" fill="#1f2937" stroke="#6366f1" stroke-width="3"/>
+
+    <!-- Thumb hole -->
+    <ellipse cx="18" cy="40" rx="8" ry="10" fill="#111827" stroke="#6366f1" stroke-width="2"/>
+
+    <!-- Color dots on palette -->
+    <!-- Indigo dot -->
+    <circle cx="50" cy="24" r="7" fill="#6366f1">
+      <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Pink dot -->
+    <circle cx="42" cy="38" r="6" fill="#ec4899">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Light blue dot -->
+    <circle cx="60" cy="34" r="5" fill="#818cf8"/>
+
+    <!-- Purple dot -->
+    <circle cx="35" cy="28" r="5" fill="#a855f7"/>
+
+    <!-- Gradient dot -->
+    <circle cx="54" cy="42" r="4" fill="url(#gradient)"/>
+  </g>
+
+  <!-- Paintbrush -->
+  <g transform="translate(70, 20)">
+    <!-- Brush handle -->
+    <rect x="0" y="0" width="8" height="44" rx="4" fill="#6366f1" transform="rotate(45 4 22)"/>
+
+    <!-- Brush ferrule (metal part) -->
+    <rect x="28" y="28" width="10" height="8" rx="2" fill="#9ca3af" transform="rotate(45 33 32)"/>
+
+    <!-- Brush bristles -->
+    <path d="M 38 38 L 44 44 L 42 46 L 40 44 L 38 46 L 36 44 L 34 46 L 32 44 L 36 40 Z"
+          fill="#ec4899" transform="rotate(45 38 43)">
+      <animate attributeName="opacity" values="1;0.8;1" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Paint stroke effect -->
+    <path d="M 45 45 Q 50 50 52 54 Q 54 58 56 60"
+          stroke="#ec4899" stroke-width="3" stroke-linecap="round"
+          fill="none" opacity="0.6">
+      <animate attributeName="stroke-dasharray" values="0,20;20,0" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="0;-20" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Sparkle effects -->
+  <g opacity="0.8">
+    <!-- Sparkle 1 -->
+    <path d="M 24 24 L 26 26 L 24 28 L 22 26 Z" fill="#818cf8">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Sparkle 2 -->
+    <path d="M 100 90 L 102 92 L 100 94 L 98 92 Z" fill="#ec4899">
+      <animate attributeName="opacity" values="0;1;0" dur="2.5s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Sparkle 3 -->
+    <circle cx="90" cy="20" r="2" fill="#a855f7">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Gradients definition -->
+  <defs>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

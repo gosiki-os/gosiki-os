@@ -1,0 +1,486 @@
+src:
+  structure.yaml:
+    content: |-
+      本プロジェクトは Gosiki OS トップページ（index.html）のデザイン刷新タスクです。
+      内容は一切変更せず、視覚デザイン・スタイル・アニメーションのみを刷新します。
+      GitHub Pages で管理されているため、純粋な HTML/CSS/JavaScript のみで実装します。
+      タスク優先度は絵文字で表現: 🔴高 🟠中 🟢低 ⚫️完了
+
+      対応実行モデル: codex / claude-code / gemini-cli / cursor-cli
+      全タスクはマークダウン形式で統一し、視覚的で読みやすい構成を実現します。
+    agent選定理由: デザイン刷新タスクは視覚的センスと技術力を併せ持つ claude-code を使用します。
+    api選定理由: 静的サイトのため外部APIは不要です。
+    dependency: []
+    agent: claude-code
+    api: []
+    ganttConfig:
+      defaultView: day
+      startDate: 2025-11-27
+      showFilters: true
+      filters:
+        priorities:
+          High: true
+          Medium: true
+          Low: true
+        statuses:
+          completed: true
+          in_progress: true
+          not_started: true
+        showDependencies: true
+      labels:
+        dayNames:
+          - 日
+          - 月
+          - 火
+          - 水
+          - 木
+          - 金
+          - 土
+        priorities:
+          high: 高
+          medium: 中
+          low: 低
+        statuses:
+          completed: 完了
+          inProgress: 進行中
+          notStarted: 未開始
+        buttons:
+          filter: フィルター
+          previousPeriod: 前へ
+          nextPeriod: 次へ
+        filterPanel:
+          priorities: 優先度
+          statuses: ステータス
+          dependencies: 依存関係
+          showDependencies: 依存関係を表示
+          tasksCount: タスク数
+        tooltipFields:
+          startDate: 開始日
+          duration: 期間
+          priority: 優先度
+          status: ステータス
+          progress: 進捗
+          agent: エージェント
+          details: 詳細
+          prerequisites: 前提タスク
+          nextTasks: 次タスク
+  design_refresh:
+    analysis:
+      既存デザイン分析.md:
+        content: |-
+
+          # 🔍 既存デザイン分析
+
+          ## タスク概要
+          現在の index.html および styles.css を精査し、デザイン上の強み・弱みを洗い出します。
+
+          ## 分析項目
+          - **カラースキーム**: 現在の配色（Indigo/Pink グラデーション）の効果測定
+          - **タイポグラフィ**: フォント選定（Inter, JetBrains Mono）の適切性確認
+          - **レイアウト**: Grid/Flexbox 構成の最適化余地
+          - **視認性**: コントラスト比・可読性の検証
+          - **ユーザビリティ**: ナビゲーション・CTA の使いやすさ評価
+
+          ## 成果物
+          - デザイン分析レポート（Markdown）
+          - 改善提案リスト
+          - 参考ベンチマーク（競合サイト比較）
+
+          ## 優先度
+          🔴 高 - プロジェクト全体の基盤となる分析
+
+          文体：分析的で客観的、数値やエビデンスを重視
+        dependency: []
+        agent: claude-code
+        api: []
+        priority: High
+        status: not_started
+        progress: 0
+        schedule:
+          start: 2025-11-27T00:00:00.000Z
+          days: 1
+
+      新デザインコンセプト策定.md:
+        content: |-
+
+          # 🎨 新デザインコンセプト策定
+
+          ## タスク概要
+          分析結果を踏まえ、Gosiki OS のブランドイメージに合致した新デザインコンセプトを策定します。
+
+          ## 策定内容
+          - **ビジュアルテーマ**: モダン・テクノロジー志向のビジュアル方向性
+          - **カラーパレット**: 新配色案（プライマリ・セカンダリ・アクセント）
+          - **タイポグラフィ**: フォントサイズ・ウェイト・行間の再設計
+          - **スペーシング**: 余白・パディング・マージンの統一ルール
+          - **アニメーション**: トランジション・ホバー効果の演出方針
+
+          ## デザインシステム
+          - CSS 変数による一元管理
+          - レスポンシブブレークポイント定義
+          - アクセシビリティ基準（WCAG 2.1 AA）準拠
+
+          ## 優先度
+          🔴 高 - デザイン刷新の核心的指針
+
+          文体：クリエイティブかつ論理的、ビジュアルコンセプトを明確に表現
+        dependency:
+          - src/design_refresh/analysis/既存デザイン分析.md
+        agent: claude-code
+        api: []
+        priority: High
+        status: not_started
+        progress: 0
+        schedule:
+          start: 2025-11-28T00:00:00.000Z
+          days: 1
+
+    implementation:
+      CSSカラースキーム刷新.md:
+        content: |-
+
+          # 🌈 CSSカラースキーム刷新
+
+          ## タスク概要
+          新デザインコンセプトに基づき、styles.css のカラー変数を全面刷新します。
+
+          ## 実装内容
+          - **CSS 変数更新**: :root セクションの色定義を新パレットに変更
+          - **グラデーション調整**: ヒーロー・CTA セクションのグラデーション再設計
+          - **コントラスト確保**: テキスト色と背景色のコントラスト比 4.5:1 以上
+          - **ダークテーマ最適化**: 既存のダークモードベースをさらに洗練
+
+          ## 色の役割
+          - **Primary**: メインブランドカラー（ボタン・リンク）
+          - **Secondary**: アクセントカラー（バッジ・ハイライト）
+          - **Background**: 背景グラデーション3階層
+          - **Text**: テキスト階層（primary/secondary/muted）
+
+          ## 優先度
+          🟠 中 - デザイン刷新の中核実装
+
+          文体：技術的で具体的、CSS実装を詳細に記述
+        dependency:
+          - src/design_refresh/analysis/新デザインコンセプト策定.md
+        agent: claude-code
+        api: []
+        priority: Medium
+        status: not_started
+        progress: 0
+        schedule:
+          start: 2025-11-29T00:00:00.000Z
+          days: 1
+
+      タイポグラフィ刷新.md:
+        content: |-
+
+          # 🔤 タイポグラフィ刷新
+
+          ## タスク概要
+          フォントサイズ・ウェイト・行間・レターススペーシングを再設計し、可読性を向上させます。
+
+          ## 実装内容
+          - **見出しスケール**: H1〜H6 のフォントサイズ階層を再定義
+          - **本文テキスト**: 本文の最適フォントサイズ（16px基準）と行間（1.6〜1.8）
+          - **フォントウェイト**: 各要素に適したウェイト配分（400/500/600/700/800）
+          - **レスポンシブタイポグラフィ**: 画面サイズに応じたフォントサイズ調整
+
+          ## アクセシビリティ
+          - 最小フォントサイズ 14px（モバイル）
+          - レターススペーシング調整で可読性向上
+          - コード要素のモノスペースフォント最適化
+
+          ## 優先度
+          🟠 中 - 視認性向上の重要施策
+
+          文体：デザイン理論に基づき、視覚的バランスを重視
+        dependency:
+          - src/design_refresh/analysis/新デザインコンセプト策定.md
+        agent: claude-code
+        api: []
+        priority: Medium
+        status: not_started
+        progress: 0
+        schedule:
+          start: 2025-11-29T00:00:00.000Z
+          days: 1
+
+      レイアウト最適化.md:
+        content: |-
+
+          # 📐 レイアウト最適化
+
+          ## タスク概要
+          Grid/Flexbox レイアウトを見直し、より洗練されたビジュアル構成を実現します。
+
+          ## 実装内容
+          - **セクション余白**: 各セクションの padding/margin を統一ルールで調整
+          - **コンテナ幅**: .container の max-width を最適化（1200px → 1280px など）
+          - **カード配置**: Feature/Problem/Roadmap カードの配置バランス調整
+          - **グリッドギャップ**: gap プロパティで要素間スペースを統一
+
+          ## レスポンシブ対応
+          - ブレークポイント見直し（960px/768px/480px）
+          - モバイルファーストアプローチの強化
+          - タッチデバイス向けボタンサイズ最適化（最小44x44px）
+
+          ## 優先度
+          🟠 中 - ユーザビリティ向上の核心
+
+          文体：構造的で論理的、レイアウト理論を明確に説明
+        dependency:
+          - src/design_refresh/implementation/CSSカラースキーム刷新.md
+        agent: claude-code
+        api: []
+        priority: Medium
+        status: not_started
+        progress: 0
+        schedule:
+          start: 2025-11-30T00:00:00.000Z
+          days: 1
+
+      アニメーション強化.md:
+        content: |-
+
+          # ✨ アニメーション強化
+
+          ## タスク概要
+          ホバー効果・トランジション・スクロールアニメーションを追加し、インタラクティブ性を向上させます。
+
+          ## 実装内容
+          - **ホバーエフェクト**: カード・ボタンのホバー時変化を滑らかに
+          - **トランジション**: transition プロパティで統一感ある動き（0.2s〜0.3s）
+          - **スクロールアニメーション**: Intersection Observer API でフェードイン効果
+          - **ロードアニメーション**: ページ読み込み時のアニメーション演出
+
+          ## パフォーマンス配慮
+          - GPU アクセラレーション（transform/opacity 使用）
+          - アニメーション無効化オプション（prefers-reduced-motion）
+          - 60fps 維持のための最適化
+
+          ## 優先度
+          🟢 低 - ユーザー体験の付加価値
+
+          文体：演出的でダイナミック、アニメーション効果を具体的に描写
+        dependency:
+          - src/design_refresh/implementation/レイアウト最適化.md
+        agent: claude-code
+        api: []
+        priority: Low
+        status: not_started
+        progress: 0
+        schedule:
+          start: 2025-12-01T00:00:00.000Z
+          days: 1
+
+    optimization:
+      パフォーマンス最適化.md:
+        content: |-
+
+          # ⚡ パフォーマンス最適化
+
+          ## タスク概要
+          CSS のファイルサイズ削減・ロード時間短縮・レンダリング最適化を実施します。
+
+          ## 実装内容
+          - **CSS 圧縮**: 不要な空白・コメント削除、プロパティ短縮記法活用
+          - **Critical CSS**: Above-the-fold コンテンツの CSS をインライン化
+          - **フォント最適化**: font-display: swap でフォント読み込み改善
+          - **画像最適化**: WebP 形式への変換、遅延読み込み（loading="lazy"）
+
+          ## 計測指標
+          - **Lighthouse スコア**: Performance 90+ 目標
+          - **First Contentful Paint (FCP)**: 1.8秒以下
+          - **Largest Contentful Paint (LCP)**: 2.5秒以下
+          - **Cumulative Layout Shift (CLS)**: 0.1以下
+
+          ## 優先度
+          🟠 中 - ユーザー体験の基盤
+
+          文体：技術的でデータドリブン、計測結果を重視
+        dependency:
+          - src/design_refresh/implementation/アニメーション強化.md
+        agent: claude-code
+        api: []
+        priority: Medium
+        status: not_started
+        progress: 0
+        schedule:
+          start: 2025-12-02T00:00:00.000Z
+          days: 1
+
+      アクセシビリティ改善.md:
+        content: |-
+
+          # ♿ アクセシビリティ改善
+
+          ## タスク概要
+          WCAG 2.1 AA 基準に準拠し、すべてのユーザーが利用しやすいデザインを実現します。
+
+          ## 実装内容
+          - **コントラスト比確保**: テキストと背景のコントラスト比 4.5:1 以上（AA基準）
+          - **キーボードナビゲーション**: Tab キーでの操作を完全サポート
+          - **ARIA ラベル**: スクリーンリーダー向けの適切なラベル付与
+          - **フォーカス表示**: focus-visible でフォーカス状態を明確に
+
+          ## 検証ツール
+          - axe DevTools による自動検証
+          - NVDA/JAWS によるスクリーンリーダーテスト
+          - キーボードのみでの操作テスト
+
+          ## 優先度
+          🔴 高 - 包括的なアクセスを保証
+
+          文体：倫理的でインクルーシブ、全ユーザーへの配慮を強調
+        dependency:
+          - src/design_refresh/implementation/アニメーション強化.md
+        agent: claude-code
+        api: []
+        priority: High
+        status: not_started
+        progress: 0
+        schedule:
+          start: 2025-12-02T00:00:00.000Z
+          days: 1
+
+    testing:
+      ブラウザ互換性テスト.md:
+        content: |-
+
+          # 🌐 ブラウザ互換性テスト
+
+          ## タスク概要
+          主要ブラウザ（Chrome/Firefox/Safari/Edge）での表示・動作を検証します。
+
+          ## テスト対象
+          - **デスクトップ**: Windows（Chrome/Firefox/Edge）、macOS（Chrome/Safari）
+          - **モバイル**: iOS Safari、Android Chrome
+          - **旧ブラウザ**: 2世代前までのバージョンをサポート
+
+          ## 検証項目
+          - **レイアウト崩れ**: Grid/Flexbox の互換性確認
+          - **フォント表示**: フォントファミリーのフォールバック確認
+          - **CSS 変数**: 変数未対応ブラウザのフォールバック
+          - **アニメーション**: トランジション・アニメーションの動作確認
+
+          ## 優先度
+          🟠 中 - 幅広いユーザー層への対応
+
+          文体：QAテスト報告書として、検証結果を網羅的に記載
+        dependency:
+          - src/design_refresh/optimization/パフォーマンス最適化.md
+          - src/design_refresh/optimization/アクセシビリティ改善.md
+        agent: claude-code
+        api: []
+        priority: Medium
+        status: not_started
+        progress: 0
+        schedule:
+          start: 2025-12-03T00:00:00.000Z
+          days: 1
+
+      レスポンシブテスト.md:
+        content: |-
+
+          # 📱 レスポンシブテスト
+
+          ## タスク概要
+          各種デバイス・画面サイズでのレイアウト・表示を検証します。
+
+          ## テストデバイス
+          - **デスクトップ**: 1920x1080、1366x768
+          - **タブレット**: iPad（768x1024）、iPad Pro（1024x1366）
+          - **スマートフォン**: iPhone 12/13（375x812）、Pixel 5（393x851）
+
+          ## 検証項目
+          - **ブレークポイント**: 480px/768px/960px での切り替わり確認
+          - **ナビゲーション**: モバイルメニューの動作確認
+          - **画像表示**: 各サイズでの最適画像読み込み
+          - **タッチ操作**: ボタン・リンクのタップ領域確認（最小44x44px）
+
+          ## 優先度
+          🟠 中 - モバイルユーザー体験の保証
+
+          文体：デバイステスト報告書として、具体的な画面サイズを明記
+        dependency:
+          - src/design_refresh/optimization/パフォーマンス最適化.md
+          - src/design_refresh/optimization/アクセシビリティ改善.md
+        agent: claude-code
+        api: []
+        priority: Medium
+        status: not_started
+        progress: 0
+        schedule:
+          start: 2025-12-03T00:00:00.000Z
+          days: 1
+
+    finalization:
+      最終レビュー.md:
+        content: |-
+
+          # 📝 最終レビュー
+
+          ## タスク概要
+          全実装・テストを統合し、デザイン刷新の最終確認を行います。
+
+          ## レビュー項目
+          - **ビジュアル一貫性**: 全セクションのデザイン統一感確認
+          - **コード品質**: CSS のコードレビュー（命名規則・整理整頓）
+          - **ドキュメント**: styles.css へのコメント追加・更新
+          - **Git コミット**: 変更内容の適切なコミットメッセージ
+
+          ## 成果物
+          - デザイン刷新完了報告書
+          - Before/After スクリーンショット
+          - Lighthouse スコアレポート
+
+          ## 優先度
+          🔴 高 - プロジェクト完了の最終関門
+
+          文体：総括的で評価的、プロジェクト全体を俯瞰
+        dependency:
+          - src/design_refresh/testing/ブラウザ互換性テスト.md
+          - src/design_refresh/testing/レスポンシブテスト.md
+        agent: claude-code
+        api: []
+        priority: High
+        status: not_started
+        progress: 0
+        schedule:
+          start: 2025-12-04T00:00:00.000Z
+          days: 1
+
+      デプロイ準備.md:
+        content: |-
+
+          # 🚀 デプロイ準備
+
+          ## タスク概要
+          GitHub Pages へのデプロイに向けた最終準備を行います。
+
+          ## 準備作業
+          - **ファイル確認**: index.html、styles.css の最終版確認
+          - **画像最適化**: 全画像の圧縮・フォーマット確認
+          - **キャッシュ戦略**: ブラウザキャッシュの設定確認
+          - **Git Push**: main ブランチへのマージとプッシュ
+
+          ## デプロイ後確認
+          - 本番環境での表示確認
+          - HTTPS 動作確認
+          - 全リンクの動作確認
+          - Google PageSpeed Insights による計測
+
+          ## 優先度
+          🔴 高 - デザイン刷新の公開
+
+          文体：実務的でチェックリスト形式、デプロイ手順を明確化
+        dependency:
+          - src/design_refresh/finalization/最終レビュー.md
+        agent: claude-code
+        api: []
+        priority: High
+        status: not_started
+        progress: 0
+        schedule:
+          start: 2025-12-05T00:00:00.000Z
+          days: 1
