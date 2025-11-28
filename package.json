@@ -1,6 +1,6 @@
 {
   "name": "@gosiki-os/port-manager",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A world where 10 AI agents can run simultaneously without port conflicts",
   "type": "module",
   "main": "src/index.js",
