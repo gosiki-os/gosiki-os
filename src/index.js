@@ -8,6 +8,10 @@ import { homedir } from 'os';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+// Read version from package.json
+const packageJson = JSON.parse(readFileSync(join(__dirname, '..', 'package.json'), 'utf-8'));
+const VERSION = packageJson.version;
+
 // Registry path
 const REGISTRY_DIR = join(homedir(), '.gosiki-os');
 const REGISTRY_FILE = join(REGISTRY_DIR, 'port-registry.json');
@@ -257,7 +261,7 @@ if (isMainModule) {
 
   } else if (command === '--help' || command === '-h') {
     console.log(`
-@gosiki-os/port-manager v0.1.4
+@gosiki-os/port-manager v${VERSION}
 
 📁 Registry: ${getDisplayPath(REGISTRY_FILE)}
 
