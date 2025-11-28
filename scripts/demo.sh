@@ -2,6 +2,9 @@
 # Demo script for Gosiki OS Port Manager
 # Usage: ./scripts/demo.sh [clean|hold|list]
 
+# Enable demo mode to mask username in output
+export GOSIKI_DEMO_MODE=true
+
 case "$1" in
   # GIF1: Clean environment + Port acquisition
   clean)

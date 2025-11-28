@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - **Label/Group support** - Assign labels to ports with `--label` flag (e.g., `--label frontend`)
-- **Username masking** - Display `<username>` instead of actual username in all outputs for privacy
+- **Demo mode** - Username masking with `GOSIKI_DEMO_MODE=true` for recording demos
 - **Post-install message** - Show registry location and quick start guide after installation
 - **Demo scripts** - Added `scripts/demo.sh` for recording demonstration videos
 - Enhanced port status display showing PID for managed ports
@@ -25,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - CLI help updated to v0.1.3 with new label examples
 - Registry schema now includes optional `label` field
+- Username masking now controlled by `GOSIKI_DEMO_MODE` environment variable (default: real username shown)
 
 ## [0.1.2] - 2025-11-28
 

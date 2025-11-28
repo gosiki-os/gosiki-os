@@ -191,7 +191,7 @@ npx @gosiki-os/port-manager --help
 
 **New in v0.1.3**:
 - 🏷️ **Labels**: Organize ports with labels (`--label frontend`, `--label backend`)
-- 🔒 **Privacy**: Username masked as `<username>` in all outputs
+- 🎬 **Demo Mode**: Set `GOSIKI_DEMO_MODE=true` to mask username for recording demos
 - 📁 **Registry Location**: Displayed in all commands for transparency
 
 ## Current Status

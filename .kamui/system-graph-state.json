@@ -5,120 +5,105 @@
   "graphRenderingMode": "normal",
   "linkDisplayMode": "all",
   "graphStats": {
-    "totalNodes": 43,
-    "folders": 11,
-    "files": 32,
-    "images": 5,
+    "totalNodes": 49,
+    "folders": 14,
+    "files": 35,
+    "images": 6,
     "videos": 0,
     "audio": 0,
-    "code": 2,
+    "code": 3,
     "text": 7,
-    "html": 1,
-    "yaml": 1,
+    "html": 2,
+    "yaml": 0,
     "json": 4,
-    "other": 12,
+    "other": 13,
     "totalLines": 0,
     "maxLines": 0
   },
   "directoryTree": {
     "name": "gosiki-oss",
     "type": "directory",
+    "path": "gosiki-oss",
     "children": [
+      {
+        "name": ".claude",
+        "type": "directory",
+        "path": ".claude",
+        "children": [],
+        "hasMore": true
+      },
       {
         "name": ".github",
         "type": "directory",
-        "children": [
-          {
-            "name": "workflows",
-            "type": "directory",
-            "children": [
-              {
-                "name": "publish.yml",
-                "type": "file",
-                "lines": 0
-              }
-            ]
-          }
-        ]
+        "path": ".github",
+        "children": [],
+        "hasMore": true
       },
       {
-        "name": ".gitignore",
-        "type": "file",
-        "lines": 0
+        "name": ".kamui",
+        "type": "directory",
+        "path": ".kamui",
+        "children": [],
+        "hasMore": true
       },
       {
-        "name": "CHANGELOG.md",
-        "type": "file",
-        "lines": 0
-      },
-      {
-        "name": "CNAME",
-        "type": "file",
-        "lines": 0
-      },
-      {
-        "name": "LICENSE",
-        "type": "file",
-        "lines": 0
-      },
-      {
-        "name": "README.md",
-        "type": "file",
-        "lines": 0
-      },
-      {
-        "name": "SECURITY.md",
-        "type": "file",
-        "lines": 0
+        "name": ".worktrees",
+        "type": "directory",
+        "path": ".worktrees",
+        "children": [],
+        "hasMore": true
       },
       {
         "name": "bin",
         "type": "directory",
+        "path": "bin",
         "children": [
           {
             "name": "gosiki-demo.js",
             "type": "file",
-            "lines": 0
+            "path": "bin\\gosiki-demo.js"
           }
         ]
       },
       {
         "name": "core",
         "type": "directory",
+        "path": "core",
         "children": [
           {
             "name": "port-manager",
             "type": "directory",
+            "path": "core\\port-manager",
             "children": [
-              {
-                "name": "PortManager.mjs",
-                "type": "file",
-                "lines": 0
-              },
-              {
-                "name": "README.md",
-                "type": "file",
-                "lines": 0
-              },
               {
                 "name": "cli.mjs",
                 "type": "file",
-                "lines": 0
+                "path": "core\\port-manager\\cli.mjs"
               },
               {
                 "name": "dashboard.mjs",
                 "type": "file",
-                "lines": 0
+                "path": "core\\port-manager\\dashboard.mjs"
               },
               {
                 "name": "index.mjs",
                 "type": "file",
-                "lines": 0
+                "path": "core\\port-manager\\index.mjs"
               },
               {
                 "name": "logger.mjs",
                 "type": "file",
-                "lines": 0
+                "path": "core\\port-manager\\logger.mjs"
+              },
+              {
+                "name": "PortManager.mjs",
+                "type": "file",
+                "path": "core\\port-manager\\PortManager.mjs"
+              },
+              {
+                "name": "README.md",
+                "type": "file",
+                "path": "core\\port-manager\\README.md"
               }
             ]
           }
@@ -127,122 +112,184 @@
       {
         "name": "docs",
         "type": "directory",
+        "path": "docs",
         "children": [
           {
             "name": "RELEASE.md",
             "type": "file",
-            "lines": 0
+            "path": "docs\\RELEASE.md"
           }
         ]
       },
       {
         "name": "examples",
         "type": "directory",
+        "path": "examples",
         "children": [
           {
             "name": "basic-app",
             "type": "directory",
+            "path": "examples\\basic-app",
             "children": [
-              {
-                "name": "README.md",
-                "type": "file",
-                "lines": 0
-              },
               {
                 "name": "index.mjs",
                 "type": "file",
-                "lines": 0
+                "path": "examples\\basic-app\\index.mjs"
               },
               {
                 "name": "package.json",
                 "type": "file",
-                "lines": 0
+                "path": "examples\\basic-app\\package.json"
+              },
+              {
+                "name": "README.md",
+                "type": "file",
+                "path": "examples\\basic-app\\README.md"
               }
             ]
           },
           {
             "name": "demo-cli",
             "type": "directory",
+            "path": "examples\\demo-cli",
             "children": [
-              {
-                "name": "README.md",
-                "type": "file",
-                "lines": 0
-              },
               {
                 "name": "index.mjs",
                 "type": "file",
-                "lines": 0
+                "path": "examples\\demo-cli\\index.mjs"
               },
               {
                 "name": "package.json",
                 "type": "file",
-                "lines": 0
+                "path": "examples\\demo-cli\\package.json"
+              },
+              {
+                "name": "README.md",
+                "type": "file",
+                "path": "examples\\demo-cli\\README.md"
               }
             ]
           }
         ]
       },
       {
-        "name": "favicon.ico",
-        "type": "file",
-        "lines": 0
-      },
-      {
-        "name": "gosiki-os_banner.png",
-        "type": "file",
-        "lines": 0
-      },
-      {
-        "name": "gosiki-os_banner_black.png",
-        "type": "file",
-        "lines": 0
-      },
-      {
-        "name": "gosiki-os_banner_black_white.png",
-        "type": "file",
-        "lines": 0
-      },
-      {
-        "name": "gosiki-os_log.png",
-        "type": "file",
-        "lines": 0
-      },
-      {
-        "name": "gosiki-os_log_.png",
-        "type": "file",
-        "lines": 0
-      },
-      {
-        "name": "index.html",
-        "type": "file",
-        "lines": 0
-      },
-      {
-        "name": "package-lock.json",
-        "type": "file",
-        "lines": 0
-      },
-      {
-        "name": "package.json",
-        "type": "file",
-        "lines": 0
-      },
-      {
-        "name": "src",
+        "name": "scripts",
         "type": "directory",
+        "path": "scripts",
         "children": [
           {
-            "name": "index.js",
+            "name": "demo.sh",
             "type": "file",
-            "lines": 0
+            "path": "scripts\\demo.sh"
+          },
+          {
+            "name": "postinstall.js",
+            "type": "file",
+            "path": "scripts\\postinstall.js"
           }
         ]
       },
       {
+        "name": "src",
+        "type": "directory",
+        "path": "src",
+        "children": [
+          {
+            "name": "index.js",
+            "type": "file",
+            "path": "src\\index.js"
+          }
+        ]
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "path": ".gitignore"
+      },
+      {
+        "name": "CHANGELOG.md",
+        "type": "file",
+        "path": "CHANGELOG.md"
+      },
+      {
+        "name": "CNAME",
+        "type": "file",
+        "path": "CNAME"
+      },
+      {
+        "name": "evaluation-report.html",
+        "type": "file",
+        "path": "evaluation-report.html"
+      },
+      {
+        "name": "favicon.ico",
+        "type": "file",
+        "path": "favicon.ico"
+      },
+      {
+        "name": "gosiki-os_banner_black_white.png",
+        "type": "file",
+        "path": "gosiki-os_banner_black_white.png"
+      },
+      {
+        "name": "gosiki-os_banner_black.png",
+        "type": "file",
+        "path": "gosiki-os_banner_black.png"
+      },
+      {
+        "name": "gosiki-os_banner.png",
+        "type": "file",
+        "path": "gosiki-os_banner.png"
+      },
+      {
+        "name": "gosiki-os_log_.png",
+        "type": "file",
+        "path": "gosiki-os_log_.png"
+      },
+      {
+        "name": "gosiki-os_log.png",
+        "type": "file",
+        "path": "gosiki-os_log.png"
+      },
+      {
+        "name": "gosiki-os_logo_premium.png",
+        "type": "file",
+        "path": "gosiki-os_logo_premium.png"
+      },
+      {
+        "name": "index.html",
+        "type": "file",
+        "path": "index.html"
+      },
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "path": "LICENSE"
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "path": "package-lock.json"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "path": "package.json"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "SECURITY.md",
+        "type": "file",
+        "path": "SECURITY.md"
+      },
+      {
         "name": "styles.css",
         "type": "file",
-        "lines": 0
+        "path": "styles.css"
       }
     ]
   },
@@ -262,13 +309,35 @@
         "glowIntensity": 0.18,
         "highlighted": false,
         "parentPath": null,
-        "childFileCount": 16,
-        "x": -17.57484278940299,
-        "y": 0.753831057028199,
-        "z": -15.443795103539713,
-        "vx": -0.001642688027402196,
-        "vy": -0.0010861425438187507,
-        "vz": -0.0017299078623886869
+        "childFileCount": 18,
+        "x": -21.793716372360667,
+        "y": 6.066374687542771,
+        "z": -5.250522632353779,
+        "vx": -0.06526330003920253,
+        "vy": -0.039681019333472636,
+        "vz": -0.01613657995612154
+      },
+      {
+        "id": "gosiki-oss/.claude",
+        "name": ".claude",
+        "path": "gosiki-oss/.claude",
+        "type": "directory",
+        "lines": 0,
+        "val": 14,
+        "color": "#4d515a",
+        "baseColor": "#4ec9b0",
+        "originalColor": "#4ec9b0",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": -61.06454889806015,
+        "y": 26.872144574676305,
+        "z": -4.306425154434166,
+        "vx": -0.07493668395159418,
+        "vy": -0.011020001533532489,
+        "vz": -0.10950217182413305
       },
       {
         "id": "gosiki-oss/.github",
@@ -285,17 +354,17 @@
         "highlighted": false,
         "parentPath": "gosiki-oss",
         "childFileCount": 0,
-        "x": 34.67234966336028,
-        "y": -2.0425459943699984,
-        "z": -69.04799581009735,
-        "vx": -0.001147442852401644,
-        "vy": -0.001169510275542231,
-        "vz": -0.0018628173130239354
+        "x": -43.7864332530856,
+        "y": -21.280477592413238,
+        "z": -35.172705234544004,
+        "vx": -0.04648292851178571,
+        "vy": -0.08308660896795045,
+        "vz": -0.055451575024958316
       },
       {
-        "id": "gosiki-oss/.github/workflows",
-        "name": "workflows",
-        "path": "gosiki-oss/.github/workflows",
+        "id": "gosiki-oss/.kamui",
+        "name": ".kamui",
+        "path": "gosiki-oss/.kamui",
         "type": "directory",
         "lines": 0,
         "val": 14,
@@ -305,168 +374,36 @@
         "defaultGlow": 0.18,
         "glowIntensity": 0.18,
         "highlighted": false,
-        "parentPath": "gosiki-oss/.github",
-        "childFileCount": 1,
-        "x": 79.24664674448665,
-        "y": -2.6205695508219047,
-        "z": -117.99294013482218,
-        "vx": -0.0004409149805633487,
-        "vy": -0.0019068994628767071,
-        "vz": -0.002103362973579969
-      },
-      {
-        "id": "gosiki-oss/.github/workflows/publish.yml",
-        "name": "publish.yml",
-        "path": "gosiki-oss/.github/workflows/publish.yml",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#f1c40f",
-        "baseColor": "#f1c40f",
-        "originalColor": "#f1c40f",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": false,
-        "parentPath": "gosiki-oss/.github/workflows",
+        "parentPath": "gosiki-oss",
         "childFileCount": 0,
-        "x": 105.7458072722621,
-        "y": -1.7898852721538803,
-        "z": -148.48035688731736,
-        "vx": 0.0005311050290607214,
-        "vy": -0.0022130962084014327,
-        "vz": -0.0018956837343162636
+        "x": -39.16200151499889,
+        "y": -9.620127265670172,
+        "z": 34.635863433604946,
+        "vx": -0.086425341846272,
+        "vy": 0.0154346903301193,
+        "vz": -0.026930683325621235
       },
       {
-        "id": "gosiki-oss/.gitignore",
-        "name": ".gitignore",
-        "path": "gosiki-oss/.gitignore",
-        "type": "file",
+        "id": "gosiki-oss/.worktrees",
+        "name": ".worktrees",
+        "path": "gosiki-oss/.worktrees",
+        "type": "directory",
         "lines": 0,
-        "val": 6,
-        "color": "#57606f",
-        "baseColor": "#57606f",
-        "originalColor": "#57606f",
+        "val": 14,
+        "color": "#4d515a",
+        "baseColor": "#4ec9b0",
+        "originalColor": "#4ec9b0",
         "defaultGlow": 0.18,
         "glowIntensity": 0.18,
         "highlighted": false,
         "parentPath": "gosiki-oss",
         "childFileCount": 0,
-        "x": -41.64819392812248,
-        "y": 25.698133229482064,
-        "z": -40.29456935402638,
-        "vx": -0.002245648037079864,
-        "vy": -0.0019928349038736645,
-        "vz": -0.0018487533498041432
-      },
-      {
-        "id": "gosiki-oss/CHANGELOG.md",
-        "name": "CHANGELOG.md",
-        "path": "gosiki-oss/CHANGELOG.md",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#3498db",
-        "baseColor": "#3498db",
-        "originalColor": "#3498db",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": true,
-        "parentPath": "gosiki-oss",
-        "childFileCount": 0,
-        "x": -33.4137256795077,
-        "y": 40.664143183616865,
-        "z": -15.47161104111904,
-        "vx": -0.0013625103441953816,
-        "vy": -0.0009999061135898242,
-        "vz": -0.002645492762056753
-      },
-      {
-        "id": "gosiki-oss/CNAME",
-        "name": "CNAME",
-        "path": "gosiki-oss/CNAME",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#57606f",
-        "baseColor": "#57606f",
-        "originalColor": "#57606f",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": false,
-        "parentPath": "gosiki-oss",
-        "childFileCount": 0,
-        "x": -3.209997135626274,
-        "y": 22.764274276346175,
-        "z": -48.65122610433327,
-        "vx": -0.0016164388735383183,
-        "vy": -0.001482792314475153,
-        "vz": -0.0023816054830190377
-      },
-      {
-        "id": "gosiki-oss/LICENSE",
-        "name": "LICENSE",
-        "path": "gosiki-oss/LICENSE",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#57606f",
-        "baseColor": "#57606f",
-        "originalColor": "#57606f",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": false,
-        "parentPath": "gosiki-oss",
-        "childFileCount": 0,
-        "x": 4.567031760337276,
-        "y": 36.0885714989432,
-        "z": -17.817877803967356,
-        "vx": -0.0015995750222674025,
-        "vy": -0.0007822920287062019,
-        "vz": -0.003853410217213555
-      },
-      {
-        "id": "gosiki-oss/README.md",
-        "name": "README.md",
-        "path": "gosiki-oss/README.md",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#3498db",
-        "baseColor": "#3498db",
-        "originalColor": "#3498db",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": false,
-        "parentPath": "gosiki-oss",
-        "childFileCount": 0,
-        "x": 5.602155227090735,
-        "y": -24.475228079093643,
-        "z": -42.47832508139828,
-        "vx": -0.0029270173895051565,
-        "vy": -0.0015355287508032015,
-        "vz": -0.002994596416253909
-      },
-      {
-        "id": "gosiki-oss/SECURITY.md",
-        "name": "SECURITY.md",
-        "path": "gosiki-oss/SECURITY.md",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#3498db",
-        "baseColor": "#3498db",
-        "originalColor": "#3498db",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": false,
-        "parentPath": "gosiki-oss",
-        "childFileCount": 0,
-        "x": -57.11592002296939,
-        "y": 3.796560104507175,
-        "z": -3.1914810182720648,
-        "vx": -0.0012331191188278098,
-        "vy": -0.0006370458727038807,
-        "vz": -0.0010570032560714665
+        "x": -19.722214221967775,
+        "y": 28.524072799956958,
+        "z": -44.22437519567199,
+        "vx": -0.170131935191099,
+        "vy": -0.0020706849864710578,
+        "vz": -0.0036232229554382656
       },
       {
         "id": "gosiki-oss/bin",
@@ -483,12 +420,12 @@
         "highlighted": false,
         "parentPath": "gosiki-oss",
         "childFileCount": 1,
-        "x": -82.40186608744749,
-        "y": -7.390545818339963,
-        "z": -32.167079192084394,
-        "vx": -0.002426332568383365,
-        "vy": -0.0017181060617576056,
-        "vz": -0.0022090657658995643
+        "x": -87.22478902540001,
+        "y": -19.88653359856493,
+        "z": 17.105547931571166,
+        "vx": -0.0710931223831044,
+        "vy": -0.07161497866585124,
+        "vz": 0.013851556016297341
       },
       {
         "id": "gosiki-oss/bin/gosiki-demo.js",
@@ -505,12 +442,12 @@
         "highlighted": false,
         "parentPath": "gosiki-oss/bin",
         "childFileCount": 0,
-        "x": -125.13834144227263,
-        "y": -11.610045633821734,
-        "z": -43.62866812877917,
-        "vx": -0.0032968216612670963,
-        "vy": -0.0017655009336901672,
-        "vz": -0.0016540327412225767
+        "x": -124.96824770907119,
+        "y": -34.91090572740372,
+        "z": 31.5173839968139,
+        "vx": -0.1110077414874317,
+        "vy": -0.11331842889714833,
+        "vz": 0.05309180349692973
       },
       {
         "id": "gosiki-oss/core",
@@ -527,12 +464,12 @@
         "highlighted": false,
         "parentPath": "gosiki-oss",
         "childFileCount": 0,
-        "x": 25.095522521722888,
-        "y": 81.00476673991886,
-        "z": -4.0311800946915755,
-        "vx": -0.0013724559519903176,
-        "vy": -0.0010450826610212834,
-        "vz": -0.0007379018935191783
+        "x": 30.079467564751138,
+        "y": 79.32509463895278,
+        "z": 33.63388232542672,
+        "vx": -0.06467254909210557,
+        "vy": -0.028058484927674352,
+        "vz": -0.038746073473493355
       },
       {
         "id": "gosiki-oss/core/port-manager",
@@ -549,56 +486,12 @@
         "highlighted": false,
         "parentPath": "gosiki-oss/core",
         "childFileCount": 6,
-        "x": 62.12485484778649,
-        "y": 150.55915509654676,
-        "z": 4.827812926349774,
-        "vx": -0.0007459904043063818,
-        "vy": -0.00015234483867993597,
-        "vz": 0.00018806761154846336
-      },
-      {
-        "id": "gosiki-oss/core/port-manager/PortManager.mjs",
-        "name": "PortManager.mjs",
-        "path": "gosiki-oss/core/port-manager/PortManager.mjs",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#57606f",
-        "baseColor": "#57606f",
-        "originalColor": "#57606f",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": false,
-        "parentPath": "gosiki-oss/core/port-manager",
-        "childFileCount": 0,
-        "x": 83.00988569582402,
-        "y": 186.68144561961785,
-        "z": 6.058461543068421,
-        "vx": -0.0007800895034622692,
-        "vy": 0.0001548341757273012,
-        "vz": 0.0006937290769161686
-      },
-      {
-        "id": "gosiki-oss/core/port-manager/README.md",
-        "name": "README.md",
-        "path": "gosiki-oss/core/port-manager/README.md",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#3498db",
-        "baseColor": "#3498db",
-        "originalColor": "#3498db",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": false,
-        "parentPath": "gosiki-oss/core/port-manager",
-        "childFileCount": 0,
-        "x": 48.11402675202314,
-        "y": 183.89277646382854,
-        "z": 22.38423574686043,
-        "vx": -0.0007317852764423021,
-        "vy": -0.00016736591447438448,
-        "vz": 0.00045307103839626326
+        "x": 74.38827264977132,
+        "y": 140.9795817355001,
+        "z": 65.54725411949097,
+        "vx": -0.0286610283801476,
+        "vy": 0.01605054870440569,
+        "vz": -0.006343293439660091
       },
       {
         "id": "gosiki-oss/core/port-manager/cli.mjs",
@@ -615,12 +508,12 @@
         "highlighted": false,
         "parentPath": "gosiki-oss/core/port-manager",
         "childFileCount": 0,
-        "x": 101.32808073251641,
-        "y": 154.9542409101729,
-        "z": 12.155963622857332,
-        "vx": -0.0007044880258925733,
-        "vy": 0.00015538079326854218,
-        "vz": 0.0004775895540299778
+        "x": 57.97072838686432,
+        "y": 170.95397510650264,
+        "z": 85.9854695154685,
+        "vx": 0.017540823816294064,
+        "vy": 0.04046510899657869,
+        "vz": 0.017632009835761273
       },
       {
         "id": "gosiki-oss/core/port-manager/dashboard.mjs",
@@ -637,12 +530,12 @@
         "highlighted": false,
         "parentPath": "gosiki-oss/core/port-manager",
         "childFileCount": 0,
-        "x": 86.60914532144155,
-        "y": 166.1997485112348,
-        "z": -22.796573767793515,
-        "vx": -0.0005210413005031697,
-        "vy": 0.0002741539921430432,
-        "vz": 0.0005279080507895563
+        "x": 81.99060173710743,
+        "y": 144.50245246908835,
+        "z": 104.69055683589542,
+        "vx": 0.0017969927759442345,
+        "vy": 0.02630979745945404,
+        "vz": -0.006754171295520334
       },
       {
         "id": "gosiki-oss/core/port-manager/index.mjs",
@@ -659,12 +552,12 @@
         "highlighted": false,
         "parentPath": "gosiki-oss/core/port-manager",
         "childFileCount": 0,
-        "x": 53.38199253946475,
-        "y": 184.57045551467527,
-        "z": -14.806719788486014,
-        "vx": -0.0008145196485586611,
-        "vy": -0.00002283673965578761,
-        "vz": 0.0004524023746278415
+        "x": 112.21057697680085,
+        "y": 139.60908391221895,
+        "z": 78.44464089255766,
+        "vx": -0.017366866134214076,
+        "vy": 0.0276902046721198,
+        "vz": 0.007055139286358419
       },
       {
         "id": "gosiki-oss/core/port-manager/logger.mjs",
@@ -681,12 +574,56 @@
         "highlighted": false,
         "parentPath": "gosiki-oss/core/port-manager",
         "childFileCount": 0,
-        "x": 77.84901405539841,
-        "y": 168.67058179442347,
-        "z": 37.395977415297594,
-        "vx": -0.001061812133225874,
-        "vy": -0.0006640584739041826,
-        "vz": 0.0006293397145662685
+        "x": 76.20423947833808,
+        "y": 180.04573102041863,
+        "z": 55.96871627783444,
+        "vx": -0.02446824473402311,
+        "vy": 0.017365824247018127,
+        "vz": -0.041683914536302276
+      },
+      {
+        "id": "gosiki-oss/core/port-manager/PortManager.mjs",
+        "name": "PortManager.mjs",
+        "path": "gosiki-oss/core/port-manager/PortManager.mjs",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#57606f",
+        "baseColor": "#57606f",
+        "originalColor": "#57606f",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss/core/port-manager",
+        "childFileCount": 0,
+        "x": 94.36776843696607,
+        "y": 170.51444416141237,
+        "z": 87.540016939465,
+        "vx": -0.008056477126582728,
+        "vy": 0.025373698068062018,
+        "vz": -0.023490075052904152
+      },
+      {
+        "id": "gosiki-oss/core/port-manager/README.md",
+        "name": "README.md",
+        "path": "gosiki-oss/core/port-manager/README.md",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#3498db",
+        "baseColor": "#3498db",
+        "originalColor": "#3498db",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss/core/port-manager",
+        "childFileCount": 0,
+        "x": 105.65789724639492,
+        "y": 164.35565326708274,
+        "z": 53.53990245243463,
+        "vx": -0.00955478725993618,
+        "vy": -0.027020731735327683,
+        "vz": -0.05484556182950514
       },
       {
         "id": "gosiki-oss/docs",
@@ -703,12 +640,12 @@
         "highlighted": false,
         "parentPath": "gosiki-oss",
         "childFileCount": 1,
-        "x": -40.638463533211144,
-        "y": 7.2520303373581845,
-        "z": -76.74229790291749,
-        "vx": -0.001445240344195391,
-        "vy": -0.0008377289787313291,
-        "vz": -0.00185122465408043
+        "x": 46.467305270428675,
+        "y": 1.205191924937951,
+        "z": -27.722575235028085,
+        "vx": -0.06201768295705827,
+        "vy": 0.012226473290726689,
+        "vz": -0.08181196029700837
       },
       {
         "id": "gosiki-oss/docs/RELEASE.md",
@@ -725,12 +662,12 @@
         "highlighted": false,
         "parentPath": "gosiki-oss/docs",
         "childFileCount": 0,
-        "x": -56.99568071228085,
-        "y": 10.972629014954146,
-        "z": -119.03118218466994,
-        "vx": -0.001903025885676006,
-        "vy": -0.0007603232890915045,
-        "vz": -0.00247844430643701
+        "x": 88.2211220133126,
+        "y": -0.24806285450839882,
+        "z": -42.03238382639968,
+        "vx": -0.02358448893746805,
+        "vy": 0.01999460468210978,
+        "vz": -0.11635767088127716
       },
       {
         "id": "gosiki-oss/examples",
@@ -747,12 +684,12 @@
         "highlighted": false,
         "parentPath": "gosiki-oss",
         "childFileCount": 0,
-        "x": -10.554431519121149,
-        "y": -87.19333554710627,
-        "z": 39.261180039950645,
-        "vx": -0.0005599167075249043,
-        "vy": -0.0006470841733100814,
-        "vz": -0.0006156439840960847
+        "x": 16.339561168810143,
+        "y": -102.01068193188853,
+        "z": -22.31768328696882,
+        "vx": -0.06338595391272156,
+        "vy": -0.025535881976545032,
+        "vz": -0.015017373258931604
       },
       {
         "id": "gosiki-oss/examples/basic-app",
@@ -769,34 +706,12 @@
         "highlighted": false,
         "parentPath": "gosiki-oss/examples",
         "childFileCount": 3,
-        "x": 13.500038628356867,
-        "y": -159.12586521089108,
-        "z": 37.59906381459637,
-        "vx": -0.0005928186236280885,
-        "vy": -0.0010568245989288634,
-        "vz": 0.0010337818361236817
-      },
-      {
-        "id": "gosiki-oss/examples/basic-app/README.md",
-        "name": "README.md",
-        "path": "gosiki-oss/examples/basic-app/README.md",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#3498db",
-        "baseColor": "#3498db",
-        "originalColor": "#3498db",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": false,
-        "parentPath": "gosiki-oss/examples/basic-app",
-        "childFileCount": 0,
-        "x": 44.642350329370565,
-        "y": -182.42688608657284,
-        "z": 44.189249190164546,
-        "vx": -0.0005662191480831583,
-        "vy": -0.001333081711661654,
-        "vz": 0.0010883221867053132
+        "x": 71.06377416804371,
+        "y": -158.62143208730666,
+        "z": -6.952435751559745,
+        "vx": -0.02108121089746865,
+        "vy": -0.13617143392962966,
+        "vz": -0.0024211884169834815
       },
       {
         "id": "gosiki-oss/examples/basic-app/index.mjs",
@@ -813,12 +728,12 @@
         "highlighted": false,
         "parentPath": "gosiki-oss/examples/basic-app",
         "childFileCount": 0,
-        "x": 8.683998779721533,
-        "y": -196.6116546298082,
-        "z": 48.98315566656752,
-        "vx": -0.0004586733635842679,
-        "vy": -0.0011499351716060737,
-        "vz": 0.001188529830213564
+        "x": 105.58786664933135,
+        "y": -169.1788229014188,
+        "z": 7.850969936982131,
+        "vx": -0.024317681935419444,
+        "vy": -0.10656153311915405,
+        "vz": 0.01147086684853596
       },
       {
         "id": "gosiki-oss/examples/basic-app/package.json",
@@ -835,12 +750,34 @@
         "highlighted": false,
         "parentPath": "gosiki-oss/examples/basic-app",
         "childFileCount": 0,
-        "x": 18.439477235143535,
-        "y": -192.04343701307278,
-        "z": 16.407861221632608,
-        "vx": -0.0002508338176391989,
-        "vy": -0.0011266619612793352,
-        "vz": 0.0008181648368285028
+        "x": 78.287830432516,
+        "y": -192.6225706046026,
+        "z": 11.321916088179407,
+        "vx": -0.031863398383949436,
+        "vy": -0.10213251002753176,
+        "vz": 0.012531630718023266
+      },
+      {
+        "id": "gosiki-oss/examples/basic-app/README.md",
+        "name": "README.md",
+        "path": "gosiki-oss/examples/basic-app/README.md",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#3498db",
+        "baseColor": "#3498db",
+        "originalColor": "#3498db",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss/examples/basic-app",
+        "childFileCount": 0,
+        "x": 97.33422205739615,
+        "y": -184.4316575170957,
+        "z": -21.57868059658711,
+        "vx": -0.03010078097123299,
+        "vy": -0.09547323505543427,
+        "vz": -0.0007529676954566549
       },
       {
         "id": "gosiki-oss/examples/demo-cli",
@@ -857,34 +794,12 @@
         "highlighted": false,
         "parentPath": "gosiki-oss/examples",
         "childFileCount": 3,
-        "x": -26.710368168093805,
-        "y": -123.97294368386203,
-        "z": 107.27859883755794,
-        "vx": 0.00014652217434517993,
-        "vy": -0.0010646087662241294,
-        "vz": -0.0005995030678837342
-      },
-      {
-        "id": "gosiki-oss/examples/demo-cli/README.md",
-        "name": "README.md",
-        "path": "gosiki-oss/examples/demo-cli/README.md",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#3498db",
-        "baseColor": "#3498db",
-        "originalColor": "#3498db",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": false,
-        "parentPath": "gosiki-oss/examples/demo-cli",
-        "childFileCount": 0,
-        "x": -12.46926270297059,
-        "y": -134.5298244440387,
-        "z": 142.79072418911932,
-        "vx": 0.00003816676637861862,
-        "vy": -0.0011042047690777955,
-        "vz": -0.0003117218551579926
+        "x": 8.833060910652632,
+        "y": -173.33276093353965,
+        "z": -58.24793228848972,
+        "vx": -0.0586697278282338,
+        "vy": -0.053468217759371994,
+        "vz": -0.026182022499827994
       },
       {
         "id": "gosiki-oss/examples/demo-cli/index.mjs",
@@ -901,12 +816,12 @@
         "highlighted": false,
         "parentPath": "gosiki-oss/examples/demo-cli",
         "childFileCount": 0,
-        "x": -39.05031906578758,
-        "y": -157.07981630014436,
-        "z": 125.3439260894376,
-        "vx": 0.00008966454654464094,
-        "vy": -0.0010833734892969605,
-        "vz": -0.0002665138783675159
+        "x": 27.14095782831706,
+        "y": -201.0478945673807,
+        "z": -79.00390577736232,
+        "vx": -0.06466898861534627,
+        "vy": -0.07724302926278052,
+        "vz": -0.033643441739766945
       },
       {
         "id": "gosiki-oss/examples/demo-cli/package.json",
@@ -923,17 +838,61 @@
         "highlighted": false,
         "parentPath": "gosiki-oss/examples/demo-cli",
         "childFileCount": 0,
-        "x": -49.28900396635852,
-        "y": -127.61848416679157,
-        "z": 139.85267507152108,
-        "vx": 0.00022284981399536743,
-        "vy": -0.0007715482918103329,
-        "vz": -0.00040544679485968025
+        "x": -5.766790174310901,
+        "y": -195.54606370589877,
+        "z": -87.13107366829266,
+        "vx": -0.07144587325946525,
+        "vy": -0.06831277026112174,
+        "vz": -0.02567413250743881
       },
       {
-        "id": "gosiki-oss/favicon.ico",
-        "name": "favicon.ico",
-        "path": "gosiki-oss/favicon.ico",
+        "id": "gosiki-oss/examples/demo-cli/README.md",
+        "name": "README.md",
+        "path": "gosiki-oss/examples/demo-cli/README.md",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#3498db",
+        "baseColor": "#3498db",
+        "originalColor": "#3498db",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss/examples/demo-cli",
+        "childFileCount": 0,
+        "x": -1.3208182643869588,
+        "y": -211.46740351185048,
+        "z": -54.91800317228645,
+        "vx": -0.06394158039664508,
+        "vy": -0.060761368663771,
+        "vz": -0.011853291790708823
+      },
+      {
+        "id": "gosiki-oss/scripts",
+        "name": "scripts",
+        "path": "gosiki-oss/scripts",
+        "type": "directory",
+        "lines": 0,
+        "val": 14,
+        "color": "#4d515a",
+        "baseColor": "#4ec9b0",
+        "originalColor": "#4ec9b0",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 2,
+        "x": -82.41154776355152,
+        "y": 70.07264015192524,
+        "z": 11.137749684000667,
+        "vx": -0.18871707553389838,
+        "vy": 0.02387554301076872,
+        "vz": 0.040816521679866144
+      },
+      {
+        "id": "gosiki-oss/scripts/demo.sh",
+        "name": "demo.sh",
+        "path": "gosiki-oss/scripts/demo.sh",
         "type": "file",
         "lines": 0,
         "val": 6,
@@ -943,190 +902,36 @@
         "defaultGlow": 0.18,
         "glowIntensity": 0.18,
         "highlighted": false,
-        "parentPath": "gosiki-oss",
+        "parentPath": "gosiki-oss/scripts",
         "childFileCount": 0,
-        "x": -5.518493708572442,
-        "y": 6.866070539673818,
-        "z": 26.192710782270503,
-        "vx": -0.000993708629974517,
-        "vy": -0.001469280776385471,
-        "vz": -0.0017895862826471849
+        "x": -118.46519406937725,
+        "y": 91.62114716046783,
+        "z": 10.73584847360955,
+        "vx": -0.2554547934099164,
+        "vy": 0.07732298642585254,
+        "vz": 0.04523237156166996
       },
       {
-        "id": "gosiki-oss/gosiki-os_banner.png",
-        "name": "gosiki-os_banner.png",
-        "path": "gosiki-oss/gosiki-os_banner.png",
+        "id": "gosiki-oss/scripts/postinstall.js",
+        "name": "postinstall.js",
+        "path": "gosiki-oss/scripts/postinstall.js",
         "type": "file",
         "lines": 0,
         "val": 6,
-        "color": "#ffb347",
-        "baseColor": "#ffb347",
-        "originalColor": "#ffb347",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
+        "color": "#f7df1e",
+        "baseColor": "#f7df1e",
+        "originalColor": "#f7df1e",
+        "defaultGlow": 0.1,
+        "glowIntensity": 0.1,
         "highlighted": false,
-        "parentPath": "gosiki-oss",
+        "parentPath": "gosiki-oss/scripts",
         "childFileCount": 0,
-        "x": -35.13765914022911,
-        "y": -8.519846912321619,
-        "z": 23.11474988629412,
-        "vx": -0.0007877213467237967,
-        "vy": -0.002074063165256902,
-        "vz": -0.001569918540597107
-      },
-      {
-        "id": "gosiki-oss/gosiki-os_banner_black.png",
-        "name": "gosiki-os_banner_black.png",
-        "path": "gosiki-oss/gosiki-os_banner_black.png",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#ffb347",
-        "baseColor": "#ffb347",
-        "originalColor": "#ffb347",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": false,
-        "parentPath": "gosiki-oss",
-        "childFileCount": 0,
-        "x": -16.711250889843754,
-        "y": 32.97962791099927,
-        "z": 13.402719974965448,
-        "vx": -0.0008871628106579975,
-        "vy": -0.00041375394994485763,
-        "vz": -0.002353064089463194
-      },
-      {
-        "id": "gosiki-oss/gosiki-os_banner_black_white.png",
-        "name": "gosiki-os_banner_black_white.png",
-        "path": "gosiki-oss/gosiki-os_banner_black_white.png",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#ffb347",
-        "baseColor": "#ffb347",
-        "originalColor": "#ffb347",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": false,
-        "parentPath": "gosiki-oss",
-        "childFileCount": 0,
-        "x": -26.345235690716027,
-        "y": -40.61490673944251,
-        "z": -25.24185043301808,
-        "vx": -0.0003332312747747714,
-        "vy": -0.0014979609763117088,
-        "vz": -0.0013053870346872672
-      },
-      {
-        "id": "gosiki-oss/gosiki-os_log.png",
-        "name": "gosiki-os_log.png",
-        "path": "gosiki-oss/gosiki-os_log.png",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#ffb347",
-        "baseColor": "#ffb347",
-        "originalColor": "#ffb347",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": false,
-        "parentPath": "gosiki-oss",
-        "childFileCount": 0,
-        "x": -33.18837969914616,
-        "y": -21.340210295039768,
-        "z": -48.57765657590379,
-        "vx": -0.0026242245892714668,
-        "vy": -0.0005382025240392006,
-        "vz": -0.0018394533841880453
-      },
-      {
-        "id": "gosiki-oss/gosiki-os_log_.png",
-        "name": "gosiki-os_log_.png",
-        "path": "gosiki-oss/gosiki-os_log_.png",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#ffb347",
-        "baseColor": "#ffb347",
-        "originalColor": "#ffb347",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": false,
-        "parentPath": "gosiki-oss",
-        "childFileCount": 0,
-        "x": 25.86618555542874,
-        "y": -1.4717604584709554,
-        "z": -21.158294803507452,
-        "vx": -0.0013612649221788483,
-        "vy": -0.0019163337775633602,
-        "vz": -0.001573439513402002
-      },
-      {
-        "id": "gosiki-oss/index.html",
-        "name": "index.html",
-        "path": "gosiki-oss/index.html",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#e44d26",
-        "baseColor": "#e44d26",
-        "originalColor": "#e44d26",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": false,
-        "parentPath": "gosiki-oss",
-        "childFileCount": 0,
-        "x": 19.72785015073781,
-        "y": 14.13234611568733,
-        "z": 3.836518783201351,
-        "vx": -0.0012851298258889934,
-        "vy": -0.00032083252113945777,
-        "vz": -0.002483914210344701
-      },
-      {
-        "id": "gosiki-oss/package-lock.json",
-        "name": "package-lock.json",
-        "path": "gosiki-oss/package-lock.json",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#8e44ad",
-        "baseColor": "#8e44ad",
-        "originalColor": "#8e44ad",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": false,
-        "parentPath": "gosiki-oss",
-        "childFileCount": 0,
-        "x": 7.644336648736412,
-        "y": -17.786953955770763,
-        "z": 15.765044224050657,
-        "vx": -0.0018032463939871494,
-        "vy": -0.0023166636628990144,
-        "vz": -0.0017534045971572116
-      },
-      {
-        "id": "gosiki-oss/package.json",
-        "name": "package.json",
-        "path": "gosiki-oss/package.json",
-        "type": "file",
-        "lines": 0,
-        "val": 6,
-        "color": "#8e44ad",
-        "baseColor": "#8e44ad",
-        "originalColor": "#8e44ad",
-        "defaultGlow": 0.18,
-        "glowIntensity": 0.18,
-        "highlighted": false,
-        "parentPath": "gosiki-oss",
-        "childFileCount": 0,
-        "x": 7.6438742906680535,
-        "y": -34.63968599289343,
-        "z": -11.064765211587172,
-        "vx": -0.0017947020035064959,
-        "vy": -0.0017519865809096657,
-        "vz": -0.0019039730648148958
+        "x": -99.65894415885487,
+        "y": 106.28803078551215,
+        "z": 25.10493610953485,
+        "vx": -0.23826091730527543,
+        "vy": 0.06148907476771401,
+        "vz": 0.055557455776973685
       },
       {
         "id": "gosiki-oss/src",
@@ -1143,12 +948,12 @@
         "highlighted": false,
         "parentPath": "gosiki-oss",
         "childFileCount": 1,
-        "x": -62.45805948403713,
-        "y": 32.707959098428184,
-        "z": 23.564850187208844,
-        "vx": -0.0004083526085564094,
-        "vy": -0.0007994419508344658,
-        "vz": -0.0017448868484296173
+        "x": -67.62190280220086,
+        "y": 30.226717833139944,
+        "z": -57.006601960505414,
+        "vx": -0.06093530348831443,
+        "vy": -0.026196356563565226,
+        "vz": -0.17778470603414712
       },
       {
         "id": "gosiki-oss/src/index.js",
@@ -1162,15 +967,389 @@
         "originalColor": "#f7df1e",
         "defaultGlow": 0.1,
         "glowIntensity": 0.1,
-        "highlighted": true,
+        "highlighted": false,
         "parentPath": "gosiki-oss/src",
         "childFileCount": 0,
-        "x": -93.21249236701081,
-        "y": 53.238184131080644,
-        "z": 50.306956230324296,
-        "vx": -0.000572268544345922,
-        "vy": -0.00048341467545824125,
-        "vz": -0.0012102124345806694
+        "x": -93.07427126223459,
+        "y": 44.15584315411677,
+        "z": -89.50195513328713,
+        "vx": -0.1485526629196051,
+        "vy": 0.02926027257817322,
+        "vz": -0.19774797520053525
+      },
+      {
+        "id": "gosiki-oss/.gitignore",
+        "name": ".gitignore",
+        "path": "gosiki-oss/.gitignore",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#57606f",
+        "baseColor": "#57606f",
+        "originalColor": "#57606f",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": -21.752768998714576,
+        "y": -11.66477975777868,
+        "z": -47.82679300554994,
+        "vx": 0.04679871620923629,
+        "vy": -0.03376944024646723,
+        "vz": -0.0328651640871845
+      },
+      {
+        "id": "gosiki-oss/CHANGELOG.md",
+        "name": "CHANGELOG.md",
+        "path": "gosiki-oss/CHANGELOG.md",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#3498db",
+        "baseColor": "#3498db",
+        "originalColor": "#3498db",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": -41.56454788639658,
+        "y": 6.238121247677173,
+        "z": -45.64684223700611,
+        "vx": -0.06519544991415942,
+        "vy": -0.030541871832302482,
+        "vz": -0.02404283179434445
+      },
+      {
+        "id": "gosiki-oss/CNAME",
+        "name": "CNAME",
+        "path": "gosiki-oss/CNAME",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#57606f",
+        "baseColor": "#57606f",
+        "originalColor": "#57606f",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": -33.532057108686054,
+        "y": 45.29562848617517,
+        "z": 13.550810408274458,
+        "vx": -0.01413820279099616,
+        "vy": 0.019276946215298053,
+        "vz": -0.063866301632963
+      },
+      {
+        "id": "gosiki-oss/evaluation-report.html",
+        "name": "evaluation-report.html",
+        "path": "gosiki-oss/evaluation-report.html",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#e44d26",
+        "baseColor": "#e44d26",
+        "originalColor": "#e44d26",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": -34.54513516391483,
+        "y": 46.809967783065346,
+        "z": -22.80443365322445,
+        "vx": -0.07979766227998857,
+        "vy": 0.006374087748000394,
+        "vz": -0.06121591149856782
+      },
+      {
+        "id": "gosiki-oss/favicon.ico",
+        "name": "favicon.ico",
+        "path": "gosiki-oss/favicon.ico",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#57606f",
+        "baseColor": "#57606f",
+        "originalColor": "#57606f",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": 6.113718487050168,
+        "y": 21.166599787369904,
+        "z": -36.701836083771106,
+        "vx": -0.058751801547482205,
+        "vy": -0.03000441631924042,
+        "vz": -0.006267888048767147
+      },
+      {
+        "id": "gosiki-oss/gosiki-os_banner_black_white.png",
+        "name": "gosiki-os_banner_black_white.png",
+        "path": "gosiki-oss/gosiki-os_banner_black_white.png",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#ffb347",
+        "baseColor": "#ffb347",
+        "originalColor": "#ffb347",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": -11.024310452407622,
+        "y": -7.722496160377218,
+        "z": 37.33966081220335,
+        "vx": -0.002582489607022189,
+        "vy": 0.04146140414794323,
+        "vz": -0.07814764248878614
+      },
+      {
+        "id": "gosiki-oss/gosiki-os_banner_black.png",
+        "name": "gosiki-os_banner_black.png",
+        "path": "gosiki-oss/gosiki-os_banner_black.png",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#ffb347",
+        "baseColor": "#ffb347",
+        "originalColor": "#ffb347",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": -4.98569242733835,
+        "y": 47.87566537901121,
+        "z": -11.262482784560895,
+        "vx": -0.10604353835753448,
+        "vy": 0.01641805297705795,
+        "vz": -0.030984616513293865
+      },
+      {
+        "id": "gosiki-oss/gosiki-os_banner.png",
+        "name": "gosiki-os_banner.png",
+        "path": "gosiki-oss/gosiki-os_banner.png",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#ffb347",
+        "baseColor": "#ffb347",
+        "originalColor": "#ffb347",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": 4.061686360174045,
+        "y": 23.945304194930856,
+        "z": 27.264498017352018,
+        "vx": -0.0965424156860295,
+        "vy": 0.02429536910612103,
+        "vz": -0.033395182359212856
+      },
+      {
+        "id": "gosiki-oss/gosiki-os_log_.png",
+        "name": "gosiki-os_log_.png",
+        "path": "gosiki-oss/gosiki-os_log_.png",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#ffb347",
+        "baseColor": "#ffb347",
+        "originalColor": "#ffb347",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": 2.518382706284135,
+        "y": -8.024755579569241,
+        "z": -40.759321117384644,
+        "vx": -0.0222096898888477,
+        "vy": -0.019461506419779617,
+        "vz": -0.049722662420573376
+      },
+      {
+        "id": "gosiki-oss/gosiki-os_log.png",
+        "name": "gosiki-os_log.png",
+        "path": "gosiki-oss/gosiki-os_log.png",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#ffb347",
+        "baseColor": "#ffb347",
+        "originalColor": "#ffb347",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": 7.882007104721462,
+        "y": -25.71817180756054,
+        "z": -17.68798263421436,
+        "vx": -0.05605572236472614,
+        "vy": -0.04605784483417898,
+        "vz": -0.01904018386208993
+      },
+      {
+        "id": "gosiki-oss/gosiki-os_logo_premium.png",
+        "name": "gosiki-os_logo_premium.png",
+        "path": "gosiki-oss/gosiki-os_logo_premium.png",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#ffb347",
+        "baseColor": "#ffb347",
+        "originalColor": "#ffb347",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": -25.867132423253036,
+        "y": -38.20363761220936,
+        "z": -17.739281289180678,
+        "vx": -0.061560625143100886,
+        "vy": -0.05155398167507631,
+        "vz": -0.06417867806214399
+      },
+      {
+        "id": "gosiki-oss/index.html",
+        "name": "index.html",
+        "path": "gosiki-oss/index.html",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#e44d26",
+        "baseColor": "#e44d26",
+        "originalColor": "#e44d26",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": 20.03673318836752,
+        "y": 21.201362133288935,
+        "z": -2.2868264082214873,
+        "vx": -0.06571533584871415,
+        "vy": -0.023528432419116608,
+        "vz": -0.017222099068669713
+      },
+      {
+        "id": "gosiki-oss/LICENSE",
+        "name": "LICENSE",
+        "path": "gosiki-oss/LICENSE",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#57606f",
+        "baseColor": "#57606f",
+        "originalColor": "#57606f",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": -39.992797700010904,
+        "y": -32.30010804624494,
+        "z": 12.15246155621892,
+        "vx": -0.1260330527442417,
+        "vy": -0.052875004195148956,
+        "vz": -0.05055197253116896
+      },
+      {
+        "id": "gosiki-oss/package-lock.json",
+        "name": "package-lock.json",
+        "path": "gosiki-oss/package-lock.json",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#8e44ad",
+        "baseColor": "#8e44ad",
+        "originalColor": "#8e44ad",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": 15.967736086950325,
+        "y": -8.774313323775582,
+        "z": 14.661957624166433,
+        "vx": -0.054240730799633936,
+        "vy": 0.004376008242003554,
+        "vz": -0.043920448048355244
+      },
+      {
+        "id": "gosiki-oss/package.json",
+        "name": "package.json",
+        "path": "gosiki-oss/package.json",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#8e44ad",
+        "baseColor": "#8e44ad",
+        "originalColor": "#8e44ad",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": -6.782258567864564,
+        "y": -32.676439061395875,
+        "z": 13.105891425120445,
+        "vx": -0.07249090645751041,
+        "vy": -0.051189797092700086,
+        "vz": -0.08255049704475086
+      },
+      {
+        "id": "gosiki-oss/README.md",
+        "name": "README.md",
+        "path": "gosiki-oss/README.md",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#3498db",
+        "baseColor": "#3498db",
+        "originalColor": "#3498db",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": -63.671910272487004,
+        "y": -6.923601391088518,
+        "z": -16.175473894244117,
+        "vx": -0.0916237908574717,
+        "vy": -0.08120541415358422,
+        "vz": -0.03835744280775701
+      },
+      {
+        "id": "gosiki-oss/SECURITY.md",
+        "name": "SECURITY.md",
+        "path": "gosiki-oss/SECURITY.md",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#3498db",
+        "baseColor": "#3498db",
+        "originalColor": "#3498db",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "gosiki-oss",
+        "childFileCount": 0,
+        "x": -56.83943701334476,
+        "y": 13.26447102750244,
+        "z": 22.58155080320334,
+        "vx": -0.07995739810553935,
+        "vy": -0.0032655687773347833,
+        "vz": -0.006469831870939199
       },
       {
         "id": "gosiki-oss/styles.css",
@@ -1187,58 +1366,33 @@
         "highlighted": false,
         "parentPath": "gosiki-oss",
         "childFileCount": 0,
-        "x": -44.75873482413474,
-        "y": -29.587373442256123,
-        "z": -2.6438305803518762,
-        "vx": -0.001827681354917481,
-        "vy": -0.000999793662287886,
-        "vz": -0.0023630931882921186
+        "x": -25.369705456138554,
+        "y": 24.040572673209816,
+        "z": 37.303486595766294,
+        "vx": -0.0717346445871428,
+        "vy": -0.011705585896937326,
+        "vz": -0.01924571399872535
       }
     ],
     "links": [
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/.claude",
+        "type": "tree"
+      },
       {
         "source": "gosiki-oss",
         "target": "gosiki-oss/.github",
         "type": "tree"
       },
       {
-        "source": "gosiki-oss/.github",
-        "target": "gosiki-oss/.github/workflows",
-        "type": "tree"
-      },
-      {
-        "source": "gosiki-oss/.github/workflows",
-        "target": "gosiki-oss/.github/workflows/publish.yml",
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/.kamui",
         "type": "tree"
       },
       {
         "source": "gosiki-oss",
-        "target": "gosiki-oss/.gitignore",
-        "type": "tree"
-      },
-      {
-        "source": "gosiki-oss",
-        "target": "gosiki-oss/CHANGELOG.md",
-        "type": "tree"
-      },
-      {
-        "source": "gosiki-oss",
-        "target": "gosiki-oss/CNAME",
-        "type": "tree"
-      },
-      {
-        "source": "gosiki-oss",
-        "target": "gosiki-oss/LICENSE",
-        "type": "tree"
-      },
-      {
-        "source": "gosiki-oss",
-        "target": "gosiki-oss/README.md",
-        "type": "tree"
-      },
-      {
-        "source": "gosiki-oss",
-        "target": "gosiki-oss/SECURITY.md",
+        "target": "gosiki-oss/.worktrees",
         "type": "tree"
       },
       {
@@ -1263,16 +1417,6 @@
       },
       {
         "source": "gosiki-oss/core/port-manager",
-        "target": "gosiki-oss/core/port-manager/PortManager.mjs",
-        "type": "tree"
-      },
-      {
-        "source": "gosiki-oss/core/port-manager",
-        "target": "gosiki-oss/core/port-manager/README.md",
-        "type": "tree"
-      },
-      {
-        "source": "gosiki-oss/core/port-manager",
         "target": "gosiki-oss/core/port-manager/cli.mjs",
         "type": "tree"
       },
@@ -1289,6 +1433,16 @@
       {
         "source": "gosiki-oss/core/port-manager",
         "target": "gosiki-oss/core/port-manager/logger.mjs",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss/core/port-manager",
+        "target": "gosiki-oss/core/port-manager/PortManager.mjs",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss/core/port-manager",
+        "target": "gosiki-oss/core/port-manager/README.md",
         "type": "tree"
       },
       {
@@ -1313,11 +1467,6 @@
       },
       {
         "source": "gosiki-oss/examples/basic-app",
-        "target": "gosiki-oss/examples/basic-app/README.md",
-        "type": "tree"
-      },
-      {
-        "source": "gosiki-oss/examples/basic-app",
         "target": "gosiki-oss/examples/basic-app/index.mjs",
         "type": "tree"
       },
@@ -1327,13 +1476,13 @@
         "type": "tree"
       },
       {
-        "source": "gosiki-oss/examples",
-        "target": "gosiki-oss/examples/demo-cli",
+        "source": "gosiki-oss/examples/basic-app",
+        "target": "gosiki-oss/examples/basic-app/README.md",
         "type": "tree"
       },
       {
-        "source": "gosiki-oss/examples/demo-cli",
-        "target": "gosiki-oss/examples/demo-cli/README.md",
+        "source": "gosiki-oss/examples",
+        "target": "gosiki-oss/examples/demo-cli",
         "type": "tree"
       },
       {
@@ -1347,48 +1496,23 @@
         "type": "tree"
       },
       {
-        "source": "gosiki-oss",
-        "target": "gosiki-oss/favicon.ico",
+        "source": "gosiki-oss/examples/demo-cli",
+        "target": "gosiki-oss/examples/demo-cli/README.md",
         "type": "tree"
       },
       {
         "source": "gosiki-oss",
-        "target": "gosiki-oss/gosiki-os_banner.png",
+        "target": "gosiki-oss/scripts",
         "type": "tree"
       },
       {
-        "source": "gosiki-oss",
-        "target": "gosiki-oss/gosiki-os_banner_black.png",
+        "source": "gosiki-oss/scripts",
+        "target": "gosiki-oss/scripts/demo.sh",
         "type": "tree"
       },
       {
-        "source": "gosiki-oss",
-        "target": "gosiki-oss/gosiki-os_banner_black_white.png",
-        "type": "tree"
-      },
-      {
-        "source": "gosiki-oss",
-        "target": "gosiki-oss/gosiki-os_log.png",
-        "type": "tree"
-      },
-      {
-        "source": "gosiki-oss",
-        "target": "gosiki-oss/gosiki-os_log_.png",
-        "type": "tree"
-      },
-      {
-        "source": "gosiki-oss",
-        "target": "gosiki-oss/index.html",
-        "type": "tree"
-      },
-      {
-        "source": "gosiki-oss",
-        "target": "gosiki-oss/package-lock.json",
-        "type": "tree"
-      },
-      {
-        "source": "gosiki-oss",
-        "target": "gosiki-oss/package.json",
+        "source": "gosiki-oss/scripts",
+        "target": "gosiki-oss/scripts/postinstall.js",
         "type": "tree"
       },
       {
@@ -1403,6 +1527,91 @@
       },
       {
         "source": "gosiki-oss",
+        "target": "gosiki-oss/.gitignore",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/CHANGELOG.md",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/CNAME",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/evaluation-report.html",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/favicon.ico",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/gosiki-os_banner_black_white.png",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/gosiki-os_banner_black.png",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/gosiki-os_banner.png",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/gosiki-os_log_.png",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/gosiki-os_log.png",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/gosiki-os_logo_premium.png",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/index.html",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/LICENSE",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/package-lock.json",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/package.json",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/README.md",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
+        "target": "gosiki-oss/SECURITY.md",
+        "type": "tree"
+      },
+      {
+        "source": "gosiki-oss",
         "target": "gosiki-oss/styles.css",
         "type": "tree"
       }
@@ -1411,6 +1620,24 @@
   "trackedFiles": [
     ".github/workflows/publish.yml",
     ".gitignore",
+    ".kamui/apps/evaluation-report-template.html",
+    ".kamui/apps/icons/index-redesign-plan.svg",
+    ".kamui/apps/index-redesign-plan.yaml",
+    ".kamui/apps/kamui-os-intro-1732171200.css",
+    ".kamui/apps/kamui-os-intro-1732171200.html",
+    ".kamui/apps/kamui-os-intro-1732171200.js",
+    ".kamui/gantte/test.yaml",
+    ".kamui/model-versions-cache.json",
+    ".kamui/prompt/merge-prompt.txt",
+    ".kamui/system-graph-state.json",
+    ".kamui/tasks-state.json",
+    ".worktrees/task-1764254057952-db1b97",
+    ".worktrees/task-1764254060258-4caee5",
+    ".worktrees/task-1764254062601-2d81fc",
+    ".worktrees/task-1764254064943-645ba6",
+    ".worktrees/task-1764254067342-bd619e",
+    ".worktrees/task-1764254069711-084cc1",
+    ".worktrees/task-1764254076932-bfcfb6",
     "CHANGELOG.md",
     "CNAME",
     "LICENSE",
@@ -1424,6 +1651,7 @@
     "core/port-manager/index.mjs",
     "core/port-manager/logger.mjs",
     "docs/RELEASE.md",
+    "evaluation-report.html",
     "examples/basic-app/README.md",
     "examples/basic-app/index.mjs",
     "examples/basic-app/package.json",
@@ -1436,9 +1664,12 @@
     "gosiki-os_banner_black_white.png",
     "gosiki-os_log.png",
     "gosiki-os_log_.png",
+    "gosiki-os_logo_premium.png",
     "index.html",
     "package-lock.json",
     "package.json",
+    "scripts/demo.sh",
+    "scripts/postinstall.js",
     "src/index.js",
     "styles.css"
   ],
@@ -1495,7 +1726,11 @@
       "gosiki-oss/docs",
       "gosiki-oss/gosiki-oss/docs",
       "gosiki-oss/src",
-      "gosiki-oss/gosiki-oss/src"
+      "gosiki-oss/gosiki-oss/src",
+      "gosiki-oss/.worktrees",
+      "gosiki-oss/gosiki-oss/.worktrees",
+      "gosiki-oss/scripts",
+      "gosiki-oss/gosiki-oss/scripts"
     ],
     "selectedPath": null
   },
@@ -1506,22 +1741,22 @@
     "isPartial": false
   },
   "gitHistoryMeta": {
-    "mode": "full",
-    "isPartial": false,
-    "branchPulse": null
+    "mode": "summary",
+    "isPartial": true,
+    "heavyComputationSkipped": true
   },
   "gitHistoryState": {
     "selectedTimelineIndex": 1,
-    "activeCommitHash": "470e150b93a345163efd8cabc61a2b6de7a6dd15",
+    "activeCommitHash": "efb7a04355a021c3c64b1bc61291b468b9b703bf",
     "entries": [
       {
         "type": "live",
         "label": "現在のコードベース",
         "files": [],
         "branch": "main",
-        "targetCommitHash": "470e150b93a345163efd8cabc61a2b6de7a6dd15",
+        "targetCommitHash": "4b12eb51a6ee77fcd40c2518cfdcaf5c47265e97",
         "worktreePath": "C:/Users/nextj/gosiki-oss",
-        "timestamp": 1764295581373,
+        "timestamp": 1764296522711,
         "lane": 0,
         "branchLabel": "main",
         "branchTags": [
@@ -1530,6 +1765,199 @@
         "isDefaultWorktree": true,
         "branchColor": "#4f85e8",
         "index": 0
+      },
+      {
+        "type": "commit",
+        "label": "WIP on main: 4b12eb5 0.1.3",
+        "commit": {
+          "hash": "efb7a04355a021c3c64b1bc61291b468b9b703bf",
+          "subject": "WIP on main: 4b12eb5 0.1.3",
+          "author": "gosiki-org",
+          "timestamp": 1764295950,
+          "parents": [
+            "4b12eb51a6ee77fcd40c2518cfdcaf5c47265e97",
+            "e7fa2632013d07967b8bb42e52f1a8dbd6745895"
+          ],
+          "parent": "4b12eb51a6ee77fcd40c2518cfdcaf5c47265e97",
+          "refs": "refs/stash",
+          "branches": [
+            "refs/stash"
+          ]
+        },
+        "commitHash": "efb7a04355a021c3c64b1bc61291b468b9b703bf",
+        "lane": 1,
+        "parentLinks": [
+          {
+            "hash": "4b12eb51a6ee77fcd40c2518cfdcaf5c47265e97",
+            "lane": 0
+          },
+          {
+            "hash": "e7fa2632013d07967b8bb42e52f1a8dbd6745895",
+            "lane": 1
+          }
+        ],
+        "primaryBranchName": "refs/stash",
+        "branchColor": "#e84f7f",
+        "branchTags": [
+          "refs/stash"
+        ],
+        "index": 1
+      },
+      {
+        "type": "commit",
+        "label": "index on main: 4b12eb5 0.1.3",
+        "commit": {
+          "hash": "e7fa2632013d07967b8bb42e52f1a8dbd6745895",
+          "subject": "index on main: 4b12eb5 0.1.3",
+          "author": "gosiki-org",
+          "timestamp": 1764295950,
+          "parents": [
+            "4b12eb51a6ee77fcd40c2518cfdcaf5c47265e97"
+          ],
+          "parent": "4b12eb51a6ee77fcd40c2518cfdcaf5c47265e97",
+          "refs": "",
+          "branches": []
+        },
+        "commitHash": "e7fa2632013d07967b8bb42e52f1a8dbd6745895",
+        "lane": 0,
+        "parentLinks": [
+          {
+            "hash": "4b12eb51a6ee77fcd40c2518cfdcaf5c47265e97",
+            "lane": 0
+          }
+        ],
+        "branchColor": "#4f85e8",
+        "branchTags": [],
+        "index": 2
+      },
+      {
+        "type": "unstaged",
+        "label": "未ステージ (4)",
+        "files": [
+          "CHANGELOG.md",
+          "scripts/demo.sh",
+          "scripts/postinstall.js",
+          "src/index.js"
+        ],
+        "branch": "main",
+        "targetCommitHash": "4b12eb51a6ee77fcd40c2518cfdcaf5c47265e97",
+        "worktreePath": "C:/Users/nextj/gosiki-oss",
+        "timestamp": 1764296522711,
+        "sortOrder": 0,
+        "lane": 0,
+        "branchColor": "#4f85e8",
+        "index": 3
+      },
+      {
+        "type": "staged",
+        "label": "ステージ済み (1)",
+        "files": [
+          "kamui/system-graph-state.json"
+        ],
+        "branch": "main",
+        "targetCommitHash": "4b12eb51a6ee77fcd40c2518cfdcaf5c47265e97",
+        "worktreePath": "C:/Users/nextj/gosiki-oss",
+        "timestamp": 1764296522711,
+        "sortOrder": 1,
+        "lane": 0,
+        "branchColor": "#4f85e8",
+        "index": 4
+      },
+      {
+        "type": "commit",
+        "label": "0.1.3",
+        "commit": {
+          "hash": "4b12eb51a6ee77fcd40c2518cfdcaf5c47265e97",
+          "subject": "0.1.3",
+          "author": "gosiki-org",
+          "timestamp": 1764295922,
+          "parents": [
+            "047846374e2f8966abfeacbd3f4f9fb7b23218c7"
+          ],
+          "parent": "047846374e2f8966abfeacbd3f4f9fb7b23218c7",
+          "refs": "HEAD -> main, tag: v0.1.3",
+          "branches": [
+            "HEAD -> main",
+            "main"
+          ]
+        },
+        "commitHash": "4b12eb51a6ee77fcd40c2518cfdcaf5c47265e97",
+        "lane": 0,
+        "parentLinks": [
+          {
+            "hash": "047846374e2f8966abfeacbd3f4f9fb7b23218c7",
+            "lane": 0
+          }
+        ],
+        "primaryBranchName": "main",
+        "branchColor": "#4f85e8",
+        "branchTags": [
+          "main"
+        ],
+        "worktrees": [
+          {
+            "path": "C:/Users/nextj/gosiki-oss",
+            "head": "4b12eb51a6ee77fcd40c2518cfdcaf5c47265e97",
+            "branch": "main",
+            "normalizedPath": "C:/Users/nextj/gosiki-oss",
+            "lane": 0
+          }
+        ],
+        "index": 5
+      },
+      {
+        "type": "commit",
+        "label": "chore: Add .kamui and .worktrees to .gitignore",
+        "commit": {
+          "hash": "047846374e2f8966abfeacbd3f4f9fb7b23218c7",
+          "subject": "chore: Add .kamui and .worktrees to .gitignore",
+          "author": "gosiki-org",
+          "timestamp": 1764295908,
+          "parents": [
+            "3ed6a24b9b1056f7cc8b2a5a4b1cc2b8a6a63245"
+          ],
+          "parent": "3ed6a24b9b1056f7cc8b2a5a4b1cc2b8a6a63245",
+          "refs": "",
+          "branches": []
+        },
+        "commitHash": "047846374e2f8966abfeacbd3f4f9fb7b23218c7",
+        "lane": 0,
+        "parentLinks": [
+          {
+            "hash": "3ed6a24b9b1056f7cc8b2a5a4b1cc2b8a6a63245",
+            "lane": 0
+          }
+        ],
+        "branchColor": "#4f85e8",
+        "branchTags": [],
+        "index": 6
+      },
+      {
+        "type": "commit",
+        "label": "feat: Add label support, username masking, and demo improvem…",
+        "commit": {
+          "hash": "3ed6a24b9b1056f7cc8b2a5a4b1cc2b8a6a63245",
+          "subject": "feat: Add label support, username masking, and demo improvements (v0.1.3)",
+          "author": "gosiki-org",
+          "timestamp": 1764295608,
+          "parents": [
+            "470e150b93a345163efd8cabc61a2b6de7a6dd15"
+          ],
+          "parent": "470e150b93a345163efd8cabc61a2b6de7a6dd15",
+          "refs": "",
+          "branches": []
+        },
+        "commitHash": "3ed6a24b9b1056f7cc8b2a5a4b1cc2b8a6a63245",
+        "lane": 0,
+        "parentLinks": [
+          {
+            "hash": "470e150b93a345163efd8cabc61a2b6de7a6dd15",
+            "lane": 0
+          }
+        ],
+        "branchColor": "#4f85e8",
+        "branchTags": [],
+        "index": 7
       },
       {
         "type": "commit",
@@ -1543,11 +1971,8 @@
             "c396f0564d134a6d394d7ca398b1823c026c0e6e"
           ],
           "parent": "c396f0564d134a6d394d7ca398b1823c026c0e6e",
-          "refs": "HEAD -> main",
-          "branches": [
-            "HEAD -> main",
-            "main"
-          ]
+          "refs": "",
+          "branches": []
         },
         "commitHash": "470e150b93a345163efd8cabc61a2b6de7a6dd15",
         "lane": 0,
@@ -1557,192 +1982,40 @@
             "lane": 0
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
-        "branchTags": [
-          "main"
-        ],
-        "worktrees": [
+        "branchTags": [],
+        "index": 8
+      },
+      {
+        "type": "commit",
+        "label": "Update publish.yml",
+        "commit": {
+          "hash": "84d0814464c1a6afacbe74fdf2a90c05bd62e084",
+          "subject": "Update publish.yml",
+          "author": "Gosiki",
+          "timestamp": 1764274370,
+          "parents": [
+            "74777f7d29544c8321445f45354bec7aaa4c8fef"
+          ],
+          "parent": "74777f7d29544c8321445f45354bec7aaa4c8fef",
+          "refs": "origin/main, origin/HEAD",
+          "branches": [
+            "origin/main",
+            "origin/HEAD"
+          ]
+        },
+        "commitHash": "84d0814464c1a6afacbe74fdf2a90c05bd62e084",
+        "lane": 0,
+        "parentLinks": [
           {
-            "path": "C:/Users/nextj/gosiki-oss",
-            "head": "470e150b93a345163efd8cabc61a2b6de7a6dd15",
-            "branch": "main",
-            "isMerged": true,
-            "mergeCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-            "status": {
-              "staged": [
-                {
-                  "path": "HANGELOG.md",
-                  "originalPath": null,
-                  "status": "modified",
-                  "rawPath": "HANGELOG.md",
-                  "timestamp": 1764295577793
-                }
-              ],
-              "unstaged": [
-                {
-                  "path": "README.md",
-                  "originalPath": null,
-                  "status": "modified",
-                  "rawPath": "README.md",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": "package.json",
-                  "originalPath": null,
-                  "status": "modified",
-                  "rawPath": "package.json",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": "src/index.js",
-                  "originalPath": null,
-                  "status": "modified",
-                  "rawPath": "src/index.js",
-                  "timestamp": 1764295577793
-                }
-              ],
-              "untracked": [
-                {
-                  "path": ".kamui/apps/evaluation-report-template.html",
-                  "status": "untracked",
-                  "rawPath": ".kamui/apps/evaluation-report-template.html",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".kamui/apps/icons/index-redesign-plan.svg",
-                  "status": "untracked",
-                  "rawPath": ".kamui/apps/icons/index-redesign-plan.svg",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".kamui/apps/index-redesign-plan.yaml",
-                  "status": "untracked",
-                  "rawPath": ".kamui/apps/index-redesign-plan.yaml",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".kamui/apps/kamui-os-intro-1732171200.css",
-                  "status": "untracked",
-                  "rawPath": ".kamui/apps/kamui-os-intro-1732171200.css",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".kamui/apps/kamui-os-intro-1732171200.html",
-                  "status": "untracked",
-                  "rawPath": ".kamui/apps/kamui-os-intro-1732171200.html",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".kamui/apps/kamui-os-intro-1732171200.js",
-                  "status": "untracked",
-                  "rawPath": ".kamui/apps/kamui-os-intro-1732171200.js",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".kamui/gantte/test.yaml",
-                  "status": "untracked",
-                  "rawPath": ".kamui/gantte/test.yaml",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".kamui/model-versions-cache.json",
-                  "status": "untracked",
-                  "rawPath": ".kamui/model-versions-cache.json",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".kamui/prompt/merge-prompt.txt",
-                  "status": "untracked",
-                  "rawPath": ".kamui/prompt/merge-prompt.txt",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".kamui/system-graph-state.json",
-                  "status": "untracked",
-                  "rawPath": ".kamui/system-graph-state.json",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".kamui/tasks-state.json",
-                  "status": "untracked",
-                  "rawPath": ".kamui/tasks-state.json",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".worktrees/task-1764254057952-db1b97/",
-                  "status": "untracked",
-                  "rawPath": ".worktrees/task-1764254057952-db1b97/",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".worktrees/task-1764254060258-4caee5/",
-                  "status": "untracked",
-                  "rawPath": ".worktrees/task-1764254060258-4caee5/",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".worktrees/task-1764254062601-2d81fc/",
-                  "status": "untracked",
-                  "rawPath": ".worktrees/task-1764254062601-2d81fc/",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".worktrees/task-1764254064943-645ba6/",
-                  "status": "untracked",
-                  "rawPath": ".worktrees/task-1764254064943-645ba6/",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".worktrees/task-1764254067342-bd619e/",
-                  "status": "untracked",
-                  "rawPath": ".worktrees/task-1764254067342-bd619e/",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".worktrees/task-1764254069711-084cc1/",
-                  "status": "untracked",
-                  "rawPath": ".worktrees/task-1764254069711-084cc1/",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": ".worktrees/task-1764254076932-bfcfb6/",
-                  "status": "untracked",
-                  "rawPath": ".worktrees/task-1764254076932-bfcfb6/",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": "evaluation-report.html",
-                  "status": "untracked",
-                  "rawPath": "evaluation-report.html",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": "gosiki-os_logo_premium.png",
-                  "status": "untracked",
-                  "rawPath": "gosiki-os_logo_premium.png",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": "scripts/demo.sh",
-                  "status": "untracked",
-                  "rawPath": "scripts/demo.sh",
-                  "timestamp": 1764295577793
-                },
-                {
-                  "path": "scripts/postinstall.js",
-                  "status": "untracked",
-                  "rawPath": "scripts/postinstall.js",
-                  "timestamp": 1764295577793
-                }
-              ],
-              "capturedAt": 1764295577793
-            },
-            "normalizedPath": "C:/Users/nextj/gosiki-oss",
-            "lane": 0
+            "hash": "74777f7d29544c8321445f45354bec7aaa4c8fef",
+            "lane": 2
           }
         ],
-        "index": 1
+        "primaryBranchName": "main",
+        "branchColor": "#4f85e8",
+        "branchTags": [],
+        "index": 9
       },
       {
         "type": "commit",
@@ -1757,22 +2030,19 @@
           ],
           "parent": "74777f7d29544c8321445f45354bec7aaa4c8fef",
           "refs": "",
-          "branches": [
-            "main"
-          ]
+          "branches": []
         },
         "commitHash": "c396f0564d134a6d394d7ca398b1823c026c0e6e",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "74777f7d29544c8321445f45354bec7aaa4c8fef",
-            "lane": 0
+            "lane": 2
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 2
+        "index": 10
       },
       {
         "type": "commit",
@@ -1786,25 +2056,20 @@
             "6edf9f599c80534d28850ea83f6600249bc4f7bc"
           ],
           "parent": "6edf9f599c80534d28850ea83f6600249bc4f7bc",
-          "refs": "tag: v0.1.2, origin/main, origin/HEAD",
-          "branches": [
-            "origin/main",
-            "origin/HEAD",
-            "main"
-          ]
+          "refs": "tag: v0.1.2",
+          "branches": []
         },
         "commitHash": "74777f7d29544c8321445f45354bec7aaa4c8fef",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "6edf9f599c80534d28850ea83f6600249bc4f7bc",
-            "lane": 0
+            "lane": 2
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 3
+        "index": 11
       },
       {
         "type": "commit",
@@ -1819,22 +2084,19 @@
           ],
           "parent": "9212773b3cdc4f973dae465986e9d8ca10998620",
           "refs": "",
-          "branches": [
-            "main"
-          ]
+          "branches": []
         },
         "commitHash": "6edf9f599c80534d28850ea83f6600249bc4f7bc",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "9212773b3cdc4f973dae465986e9d8ca10998620",
-            "lane": 0
+            "lane": 2
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 4
+        "index": 12
       },
       {
         "type": "commit",
@@ -1849,22 +2111,19 @@
           ],
           "parent": "76718937e8ed3e515958fd665b23328c06aed91a",
           "refs": "",
-          "branches": [
-            "main"
-          ]
+          "branches": []
         },
         "commitHash": "9212773b3cdc4f973dae465986e9d8ca10998620",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "76718937e8ed3e515958fd665b23328c06aed91a",
-            "lane": 0
+            "lane": 2
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 5
+        "index": 13
       },
       {
         "type": "commit",
@@ -1879,22 +2138,19 @@
           ],
           "parent": "fff683af3bf1910e7b8ad623a8e346234d3410e2",
           "refs": "",
-          "branches": [
-            "main"
-          ]
+          "branches": []
         },
         "commitHash": "76718937e8ed3e515958fd665b23328c06aed91a",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "fff683af3bf1910e7b8ad623a8e346234d3410e2",
-            "lane": 0
+            "lane": 2
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 6
+        "index": 14
       },
       {
         "type": "commit",
@@ -1909,53 +2165,19 @@
           ],
           "parent": "a9e12d95de698853b4e2d35c447cc61b69d92b13",
           "refs": "",
-          "branches": [
-            "main"
-          ]
+          "branches": []
         },
         "commitHash": "fff683af3bf1910e7b8ad623a8e346234d3410e2",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "a9e12d95de698853b4e2d35c447cc61b69d92b13",
-            "lane": 0
+            "lane": 2
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 7
-      },
-      {
-        "type": "commit",
-        "label": "feat: add automated npm publishing via GitHub Actions",
-        "commit": {
-          "hash": "ca16ead1b5e0f143345c4e13565acc187cb410f6",
-          "subject": "feat: add automated npm publishing via GitHub Actions",
-          "author": "gosiki-org",
-          "timestamp": 1764269807,
-          "parents": [
-            "a9e12d95de698853b4e2d35c447cc61b69d92b13"
-          ],
-          "parent": "a9e12d95de698853b4e2d35c447cc61b69d92b13",
-          "refs": "HEAD -> main",
-          "branches": [
-            "HEAD -> main",
-            "main"
-          ]
-        },
-        "commitHash": "ca16ead1b5e0f143345c4e13565acc187cb410f6",
-        "lane": 0,
-        "parentLinks": [
-          {
-            "hash": "a9e12d95de698853b4e2d35c447cc61b69d92b13",
-            "lane": 0
-          }
-        ],
-        "primaryBranchName": "main",
-        "branchColor": "#4f85e8",
-        "branchTags": [],
-        "index": 8
+        "index": 15
       },
       {
         "type": "commit",
@@ -1970,86 +2192,19 @@
           ],
           "parent": "9128e725fe6dc8393913af6a28b4c3c0754163a0",
           "refs": "",
-          "branches": [
-            "main"
-          ]
+          "branches": []
         },
         "commitHash": "a9e12d95de698853b4e2d35c447cc61b69d92b13",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "9128e725fe6dc8393913af6a28b4c3c0754163a0",
-            "lane": 0
-          }
-        ],
-        "primaryBranchName": "main",
-        "branchColor": "#4f85e8",
-        "branchTags": [],
-        "index": 9
-      },
-      {
-        "type": "commit",
-        "label": "On main: Temporary stash for PR merge",
-        "commit": {
-          "hash": "94bd17a42119a7a5ccf9e693bdd6382a3dd9796c",
-          "subject": "On main: Temporary stash for PR merge",
-          "author": "gosiki-org",
-          "timestamp": 1764268943,
-          "parents": [
-            "02bede3d576b744c618aebc466c95ef86d913e4f",
-            "c9f65db88c27fb4e067d322933acc37754b6ac21"
-          ],
-          "parent": "02bede3d576b744c618aebc466c95ef86d913e4f",
-          "refs": "refs/stash",
-          "branches": [
-            "refs/stash"
-          ]
-        },
-        "commitHash": "94bd17a42119a7a5ccf9e693bdd6382a3dd9796c",
-        "lane": 1,
-        "parentLinks": [
-          {
-            "hash": "02bede3d576b744c618aebc466c95ef86d913e4f",
-            "lane": 2
-          },
-          {
-            "hash": "c9f65db88c27fb4e067d322933acc37754b6ac21",
-            "lane": 3
-          }
-        ],
-        "primaryBranchName": "refs/stash",
-        "branchColor": "#e84f7f",
-        "branchTags": [
-          "refs/stash"
-        ],
-        "index": 10
-      },
-      {
-        "type": "commit",
-        "label": "index on main: 02bede3 feat: Phase 1a v0.1.1 - Add Demo CLI …",
-        "commit": {
-          "hash": "c9f65db88c27fb4e067d322933acc37754b6ac21",
-          "subject": "index on main: 02bede3 feat: Phase 1a v0.1.1 - Add Demo CLI and Examples",
-          "author": "gosiki-org",
-          "timestamp": 1764268943,
-          "parents": [
-            "02bede3d576b744c618aebc466c95ef86d913e4f"
-          ],
-          "parent": "02bede3d576b744c618aebc466c95ef86d913e4f",
-          "refs": "",
-          "branches": []
-        },
-        "commitHash": "c9f65db88c27fb4e067d322933acc37754b6ac21",
-        "lane": 0,
-        "parentLinks": [
-          {
-            "hash": "02bede3d576b744c618aebc466c95ef86d913e4f",
             "lane": 2
           }
         ],
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 11
+        "index": 16
       },
       {
         "type": "commit",
@@ -2064,22 +2219,19 @@
           ],
           "parent": "679bfc169b3901b7211e72b165422f492eee6cde",
           "refs": "",
-          "branches": [
-            "main"
-          ]
+          "branches": []
         },
         "commitHash": "9128e725fe6dc8393913af6a28b4c3c0754163a0",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "679bfc169b3901b7211e72b165422f492eee6cde",
-            "lane": 0
+            "lane": 2
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 12
+        "index": 17
       },
       {
         "type": "commit",
@@ -2103,7 +2255,7 @@
         "parentLinks": [
           {
             "hash": "08fba034c74998a9f189ccdc871c554fed8a0f31",
-            "lane": 4
+            "lane": 3
           }
         ],
         "primaryBranchName": "feature/v0.1.1-demo-cli",
@@ -2111,7 +2263,7 @@
         "branchTags": [
           "feature/v0.1.1-demo-cli"
         ],
-        "index": 13
+        "index": 18
       },
       {
         "type": "commit",
@@ -2133,12 +2285,12 @@
         "parentLinks": [
           {
             "hash": "02bede3d576b744c618aebc466c95ef86d913e4f",
-            "lane": 2
+            "lane": 3
           }
         ],
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 14
+        "index": 19
       },
       {
         "type": "commit",
@@ -2160,12 +2312,12 @@
         "parentLinks": [
           {
             "hash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-            "lane": 2
+            "lane": 3
           }
         ],
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 15
+        "index": 20
       },
       {
         "type": "commit",
@@ -2181,29 +2333,63 @@
           ],
           "parent": "20dd3f39b7cb07d229ca27634139da24153d460b",
           "refs": "",
-          "branches": [
-            "main",
-            "gosiki-os/task/task-1764254069711-084cc1"
-          ]
+          "branches": []
         },
         "commitHash": "679bfc169b3901b7211e72b165422f492eee6cde",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-            "lane": 2
+            "lane": 3
           },
           {
             "hash": "505769ace353062749fbb4a53fa9400bcca16cf6",
-            "lane": 5
+            "lane": 4
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
-        "branchTags": [
-          "gosiki-os/task/task-1764254069711-084cc1"
+        "branchTags": [],
+        "index": 21
+      },
+      {
+        "type": "commit",
+        "label": "feat: Redesign website with 'Blueprint' theme",
+        "commit": {
+          "hash": "505769ace353062749fbb4a53fa9400bcca16cf6",
+          "subject": "feat: Redesign website with 'Blueprint' theme",
+          "author": "gosiki-org",
+          "timestamp": 1764260616,
+          "parents": [
+            "20dd3f39b7cb07d229ca27634139da24153d460b"
+          ],
+          "parent": "20dd3f39b7cb07d229ca27634139da24153d460b",
+          "refs": "origin/task/task-1764254069711-084cc1, task/task-1764254069711-084cc1",
+          "branches": [
+            "origin/task/task-1764254069711-084cc1",
+            "task/task-1764254069711-084cc1"
+          ]
+        },
+        "commitHash": "505769ace353062749fbb4a53fa9400bcca16cf6",
+        "lane": 3,
+        "parentLinks": [
+          {
+            "hash": "20dd3f39b7cb07d229ca27634139da24153d460b",
+            "lane": 3
+          }
         ],
-        "index": 16
+        "primaryBranchName": "task/task-1764254069711-084cc1",
+        "branchColor": "#e8a84f",
+        "branchTags": [],
+        "worktrees": [
+          {
+            "path": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254069711-084cc1",
+            "head": "505769ace353062749fbb4a53fa9400bcca16cf6",
+            "branch": "task/task-1764254069711-084cc1",
+            "normalizedPath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254069711-084cc1",
+            "lane": 3
+          }
+        ],
+        "index": 22
       },
       {
         "type": "anchor",
@@ -2225,374 +2411,7 @@
         "taskName": "GeminiCLI2: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。",
         "tooltip": "タスク: GeminiCLI2: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。\nステータス: 作業中\nID: task-1764254069711-084cc1\nBranch: task/task-1764254069711-084cc1\nWorktree: C:/Users/nextj/gosiki-oss/.worktrees/task-1764254069711-084cc1",
         "branchColor": "#e8a84f",
-        "index": 17
-      },
-      {
-        "type": "commit",
-        "label": "feat: Redesign website with 'Blueprint' theme",
-        "commit": {
-          "hash": "505769ace353062749fbb4a53fa9400bcca16cf6",
-          "subject": "feat: Redesign website with 'Blueprint' theme",
-          "author": "gosiki-org",
-          "timestamp": 1764260616,
-          "parents": [
-            "20dd3f39b7cb07d229ca27634139da24153d460b"
-          ],
-          "parent": "20dd3f39b7cb07d229ca27634139da24153d460b",
-          "refs": "origin/task/task-1764254069711-084cc1, task/task-1764254069711-084cc1",
-          "branches": [
-            "origin/task/task-1764254069711-084cc1",
-            "task/task-1764254069711-084cc1",
-            "gosiki-os/task/task-1764254069711-084cc1",
-            "main"
-          ]
-        },
-        "commitHash": "505769ace353062749fbb4a53fa9400bcca16cf6",
-        "lane": 0,
-        "parentLinks": [
-          {
-            "hash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-            "lane": 2
-          }
-        ],
-        "primaryBranchName": "main",
-        "branchColor": "#4f85e8",
-        "branchTags": [],
-        "worktrees": [
-          {
-            "path": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254069711-084cc1",
-            "head": "505769ace353062749fbb4a53fa9400bcca16cf6",
-            "branch": "task/task-1764254069711-084cc1",
-            "isMerged": false,
-            "mergeCommitHash": null,
-            "status": {
-              "staged": [],
-              "unstaged": [],
-              "untracked": [],
-              "capturedAt": 1764295578140
-            },
-            "normalizedPath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254069711-084cc1",
-            "lane": 3
-          }
-        ],
-        "index": 18
-      },
-      {
-        "type": "unstaged",
-        "label": "未ステージ [task/task-1764254057952-db1b97] (1)",
-        "files": [
-          "new_styles.css"
-        ],
-        "branch": "task/task-1764254057952-db1b97",
-        "targetCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254057952-db1b97",
-        "timestamp": 1764295577796,
-        "sortOrder": 0,
-        "lane": 4,
-        "branchColor": "#4fe84f",
-        "index": 19
-      },
-      {
-        "type": "unstaged",
-        "label": "未ステージ [task/task-1764254060258-4caee5] (1)",
-        "files": [
-          "styles.css"
-        ],
-        "branch": "task/task-1764254060258-4caee5",
-        "targetCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254060258-4caee5",
-        "timestamp": 1764295577858,
-        "sortOrder": 0,
-        "lane": 5,
-        "branchColor": "#e84f4f",
-        "index": 20
-      },
-      {
-        "type": "staged",
-        "label": "ステージ済み [task/task-1764254060258-4caee5] (1)",
-        "files": [
-          "ndex.html"
-        ],
-        "branch": "task/task-1764254060258-4caee5",
-        "targetCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254060258-4caee5",
-        "timestamp": 1764295577858,
-        "sortOrder": 1,
-        "lane": 5,
-        "branchColor": "#e84f4f",
-        "index": 21
-      },
-      {
-        "type": "staged",
-        "label": "ステージ済み [task/task-1764254062601-2d81fc] (1)",
-        "files": [
-          "tyles.css"
-        ],
-        "branch": "task/task-1764254062601-2d81fc",
-        "targetCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254062601-2d81fc",
-        "timestamp": 1764295577861,
-        "sortOrder": 1,
-        "lane": 6,
-        "branchColor": "#4f85e8",
-        "index": 22
-      },
-      {
-        "type": "staged",
-        "label": "ステージ済み [task/task-1764254064943-645ba6] (1)",
-        "files": [
-          "tyles.css"
-        ],
-        "branch": "task/task-1764254064943-645ba6",
-        "targetCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254064943-645ba6",
-        "timestamp": 1764295577993,
-        "sortOrder": 1,
-        "lane": 7,
-        "branchColor": "#e84f7f",
         "index": 23
-      },
-      {
-        "type": "staged",
-        "label": "ステージ済み [task/task-1764254067342-bd619e] (1)",
-        "files": [
-          "tyles.css"
-        ],
-        "branch": "task/task-1764254067342-bd619e",
-        "targetCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254067342-bd619e",
-        "timestamp": 1764295577990,
-        "sortOrder": 1,
-        "lane": 8,
-        "branchColor": "#4fe8b8",
-        "index": 24
-      },
-      {
-        "type": "anchor",
-        "label": "[作業中] CodexCLI1: ユーザー入力: C:\\Users\\next…",
-        "branch": "task/task-1764254057952-db1b97",
-        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254057952-db1b97",
-        "parentCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-        "lane": 4,
-        "isMerged": false,
-        "mergeCommitHash": null,
-        "statusChildren": [
-          {
-            "type": "unstaged",
-            "label": "未ステージ [task/task-1764254057952-db1b97] (1)",
-            "files": [
-              "new_styles.css"
-            ],
-            "branch": "task/task-1764254057952-db1b97",
-            "targetCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-            "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254057952-db1b97",
-            "timestamp": 1764295577796,
-            "sortOrder": 0,
-            "lane": 4,
-            "branchColor": "#4fe84f",
-            "index": 19
-          }
-        ],
-        "isDefaultWorktree": false,
-        "renderMode": "node",
-        "shouldHide": false,
-        "tagLabel": "task/task-1764254057952-db1b97",
-        "taskId": "task-1764254057952-db1b97",
-        "taskStatus": "working",
-        "taskStatusLabel": "作業中",
-        "taskName": "CodexCLI1: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。",
-        "tooltip": "タスク: CodexCLI1: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。\nステータス: 作業中\nID: task-1764254057952-db1b97\nBranch: task/task-1764254057952-db1b97\nWorktree: C:/Users/nextj/gosiki-oss/.worktrees/task-1764254057952-db1b97",
-        "branchColor": "#4fe84f",
-        "index": 25
-      },
-      {
-        "type": "anchor",
-        "label": "[作業中] CodexCLI2: ユーザー入力: C:\\Users\\next…",
-        "branch": "task/task-1764254060258-4caee5",
-        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254060258-4caee5",
-        "parentCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-        "lane": 5,
-        "isMerged": false,
-        "mergeCommitHash": null,
-        "statusChildren": [
-          {
-            "type": "unstaged",
-            "label": "未ステージ [task/task-1764254060258-4caee5] (1)",
-            "files": [
-              "styles.css"
-            ],
-            "branch": "task/task-1764254060258-4caee5",
-            "targetCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-            "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254060258-4caee5",
-            "timestamp": 1764295577858,
-            "sortOrder": 0,
-            "lane": 5,
-            "branchColor": "#e84f4f",
-            "index": 20
-          },
-          {
-            "type": "staged",
-            "label": "ステージ済み [task/task-1764254060258-4caee5] (1)",
-            "files": [
-              "ndex.html"
-            ],
-            "branch": "task/task-1764254060258-4caee5",
-            "targetCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-            "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254060258-4caee5",
-            "timestamp": 1764295577858,
-            "sortOrder": 1,
-            "lane": 5,
-            "branchColor": "#e84f4f",
-            "index": 21
-          }
-        ],
-        "isDefaultWorktree": false,
-        "renderMode": "node",
-        "shouldHide": false,
-        "tagLabel": "task/task-1764254060258-4caee5",
-        "taskId": "task-1764254060258-4caee5",
-        "taskStatus": "working",
-        "taskStatusLabel": "作業中",
-        "taskName": "CodexCLI2: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。",
-        "tooltip": "タスク: CodexCLI2: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。\nステータス: 作業中\nID: task-1764254060258-4caee5\nBranch: task/task-1764254060258-4caee5\nWorktree: C:/Users/nextj/gosiki-oss/.worktrees/task-1764254060258-4caee5",
-        "branchColor": "#e84f4f",
-        "index": 26
-      },
-      {
-        "type": "anchor",
-        "label": "[作業中] ClaudeCode1: ユーザー入力: C:\\Users\\ne…",
-        "branch": "task/task-1764254062601-2d81fc",
-        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254062601-2d81fc",
-        "parentCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-        "lane": 6,
-        "isMerged": false,
-        "mergeCommitHash": null,
-        "statusChildren": [
-          {
-            "type": "staged",
-            "label": "ステージ済み [task/task-1764254062601-2d81fc] (1)",
-            "files": [
-              "tyles.css"
-            ],
-            "branch": "task/task-1764254062601-2d81fc",
-            "targetCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-            "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254062601-2d81fc",
-            "timestamp": 1764295577861,
-            "sortOrder": 1,
-            "lane": 6,
-            "branchColor": "#4f85e8",
-            "index": 22
-          }
-        ],
-        "isDefaultWorktree": false,
-        "renderMode": "node",
-        "shouldHide": false,
-        "tagLabel": "task/task-1764254062601-2d81fc",
-        "taskId": "task-1764254062601-2d81fc",
-        "taskStatus": "working",
-        "taskStatusLabel": "作業中",
-        "taskName": "ClaudeCode1: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。",
-        "tooltip": "タスク: ClaudeCode1: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。\nステータス: 作業中\nID: task-1764254062601-2d81fc\nBranch: task/task-1764254062601-2d81fc\nWorktree: C:/Users/nextj/gosiki-oss/.worktrees/task-1764254062601-2d81fc",
-        "branchColor": "#4f85e8",
-        "index": 27
-      },
-      {
-        "type": "anchor",
-        "label": "[作業中] ClaudeCode2: ユーザー入力: C:\\Users\\ne…",
-        "branch": "task/task-1764254064943-645ba6",
-        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254064943-645ba6",
-        "parentCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-        "lane": 7,
-        "isMerged": false,
-        "mergeCommitHash": null,
-        "statusChildren": [
-          {
-            "type": "staged",
-            "label": "ステージ済み [task/task-1764254064943-645ba6] (1)",
-            "files": [
-              "tyles.css"
-            ],
-            "branch": "task/task-1764254064943-645ba6",
-            "targetCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-            "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254064943-645ba6",
-            "timestamp": 1764295577993,
-            "sortOrder": 1,
-            "lane": 7,
-            "branchColor": "#e84f7f",
-            "index": 23
-          }
-        ],
-        "isDefaultWorktree": false,
-        "renderMode": "node",
-        "shouldHide": false,
-        "tagLabel": "task/task-1764254064943-645ba6",
-        "taskId": "task-1764254064943-645ba6",
-        "taskStatus": "working",
-        "taskStatusLabel": "作業中",
-        "taskName": "ClaudeCode2: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。",
-        "tooltip": "タスク: ClaudeCode2: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。\nステータス: 作業中\nID: task-1764254064943-645ba6\nBranch: task/task-1764254064943-645ba6\nWorktree: C:/Users/nextj/gosiki-oss/.worktrees/task-1764254064943-645ba6",
-        "branchColor": "#e84f7f",
-        "index": 28
-      },
-      {
-        "type": "anchor",
-        "label": "[作業中] GeminiCLI1: ユーザー入力: C:\\Users\\nex…",
-        "branch": "task/task-1764254067342-bd619e",
-        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254067342-bd619e",
-        "parentCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-        "lane": 8,
-        "isMerged": false,
-        "mergeCommitHash": null,
-        "statusChildren": [
-          {
-            "type": "staged",
-            "label": "ステージ済み [task/task-1764254067342-bd619e] (1)",
-            "files": [
-              "tyles.css"
-            ],
-            "branch": "task/task-1764254067342-bd619e",
-            "targetCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-            "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254067342-bd619e",
-            "timestamp": 1764295577990,
-            "sortOrder": 1,
-            "lane": 8,
-            "branchColor": "#4fe8b8",
-            "index": 24
-          }
-        ],
-        "isDefaultWorktree": false,
-        "renderMode": "node",
-        "shouldHide": false,
-        "tagLabel": "task/task-1764254067342-bd619e",
-        "taskId": "task-1764254067342-bd619e",
-        "taskStatus": "working",
-        "taskStatusLabel": "作業中",
-        "taskName": "GeminiCLI1: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。",
-        "tooltip": "タスク: GeminiCLI1: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。\nステータス: 作業中\nID: task-1764254067342-bd619e\nBranch: task/task-1764254067342-bd619e\nWorktree: C:/Users/nextj/gosiki-oss/.worktrees/task-1764254067342-bd619e",
-        "branchColor": "#4fe8b8",
-        "index": 29
-      },
-      {
-        "type": "anchor",
-        "label": "[作業中] 🔍Monitor: ユーザー入力: C:\\Users\\next…",
-        "branch": "task/task-1764254076932-bfcfb6",
-        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254076932-bfcfb6",
-        "parentCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-        "lane": 9,
-        "isMerged": false,
-        "mergeCommitHash": null,
-        "statusChildren": [],
-        "isDefaultWorktree": false,
-        "renderMode": "node",
-        "shouldHide": false,
-        "tagLabel": "task/task-1764254076932-bfcfb6",
-        "taskId": "task-1764254076932-bfcfb6",
-        "taskStatus": "working",
-        "taskStatusLabel": "作業中",
-        "taskName": "🔍Monitor: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。",
-        "tooltip": "タスク: 🔍Monitor: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。\nステータス: 作業中\nID: task-1764254076932-bfcfb6\nBranch: task/task-1764254076932-bfcfb6\nWorktree: C:/Users/nextj/gosiki-oss/.worktrees/task-1764254076932-bfcfb6",
-        "branchColor": "#4fe84f",
-        "index": 30
       },
       {
         "type": "commit",
@@ -2629,26 +2448,23 @@
             "task/task-1764231026377-e72398",
             "task/task-1764231024004-9418a0",
             "task/task-1764231021682-57ae51",
-            "task/task-1764231019396-61b494",
-            "gosiki-os/task/task-1764254069711-084cc1",
-            "main",
-            "task/task-1764254069711-084cc1"
+            "task/task-1764231019396-61b494"
           ]
         },
         "commitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
-        "lane": 0,
+        "lane": 4,
         "parentLinks": [
           {
             "hash": "c6c699929eb01fd02942ae3b3d34ac8a14a3011c",
-            "lane": 2
+            "lane": 3
           },
           {
             "hash": "154a7b95202212fbb3e1c68f2879907a4b349a16",
-            "lane": 6
+            "lane": 5
           }
         ],
-        "primaryBranchName": "main",
-        "branchColor": "#4f85e8",
+        "primaryBranchName": "task/task-1764254076932-bfcfb6",
+        "branchColor": "#4fe84f",
         "branchTags": [
           "task/task-1764231019396-61b494",
           "task/task-1764231021682-57ae51",
@@ -2671,141 +2487,178 @@
             "path": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254057952-db1b97",
             "head": "20dd3f39b7cb07d229ca27634139da24153d460b",
             "branch": "task/task-1764254057952-db1b97",
-            "isMerged": false,
-            "mergeCommitHash": null,
-            "status": {
-              "staged": [],
-              "unstaged": [],
-              "untracked": [
-                {
-                  "path": "new_styles.css",
-                  "status": "untracked",
-                  "rawPath": "new_styles.css",
-                  "timestamp": 1764295577796
-                }
-              ],
-              "capturedAt": 1764295577796
-            },
             "normalizedPath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254057952-db1b97",
-            "lane": 4
+            "lane": 11
           },
           {
             "path": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254060258-4caee5",
             "head": "20dd3f39b7cb07d229ca27634139da24153d460b",
             "branch": "task/task-1764254060258-4caee5",
-            "isMerged": false,
-            "mergeCommitHash": null,
-            "status": {
-              "staged": [
-                {
-                  "path": "ndex.html",
-                  "originalPath": null,
-                  "status": "modified",
-                  "rawPath": "ndex.html",
-                  "timestamp": 1764295577858
-                }
-              ],
-              "unstaged": [
-                {
-                  "path": "styles.css",
-                  "originalPath": null,
-                  "status": "modified",
-                  "rawPath": "styles.css",
-                  "timestamp": 1764295577858
-                }
-              ],
-              "untracked": [],
-              "capturedAt": 1764295577858
-            },
             "normalizedPath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254060258-4caee5",
-            "lane": 5
+            "lane": 10
           },
           {
             "path": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254062601-2d81fc",
             "head": "20dd3f39b7cb07d229ca27634139da24153d460b",
             "branch": "task/task-1764254062601-2d81fc",
-            "isMerged": false,
-            "mergeCommitHash": null,
-            "status": {
-              "staged": [
-                {
-                  "path": "tyles.css",
-                  "originalPath": null,
-                  "status": "modified",
-                  "rawPath": "tyles.css",
-                  "timestamp": 1764295577861
-                }
-              ],
-              "unstaged": [],
-              "untracked": [],
-              "capturedAt": 1764295577861
-            },
             "normalizedPath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254062601-2d81fc",
-            "lane": 6
+            "lane": 9
           },
           {
             "path": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254064943-645ba6",
             "head": "20dd3f39b7cb07d229ca27634139da24153d460b",
             "branch": "task/task-1764254064943-645ba6",
-            "isMerged": false,
-            "mergeCommitHash": null,
-            "status": {
-              "staged": [
-                {
-                  "path": "tyles.css",
-                  "originalPath": null,
-                  "status": "modified",
-                  "rawPath": "tyles.css",
-                  "timestamp": 1764295577993
-                }
-              ],
-              "unstaged": [],
-              "untracked": [],
-              "capturedAt": 1764295577993
-            },
             "normalizedPath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254064943-645ba6",
-            "lane": 7
+            "lane": 8
           },
           {
             "path": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254067342-bd619e",
             "head": "20dd3f39b7cb07d229ca27634139da24153d460b",
             "branch": "task/task-1764254067342-bd619e",
-            "isMerged": false,
-            "mergeCommitHash": null,
-            "status": {
-              "staged": [
-                {
-                  "path": "tyles.css",
-                  "originalPath": null,
-                  "status": "modified",
-                  "rawPath": "tyles.css",
-                  "timestamp": 1764295577990
-                }
-              ],
-              "unstaged": [],
-              "untracked": [],
-              "capturedAt": 1764295577990
-            },
             "normalizedPath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254067342-bd619e",
-            "lane": 8
+            "lane": 7
           },
           {
             "path": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254076932-bfcfb6",
             "head": "20dd3f39b7cb07d229ca27634139da24153d460b",
             "branch": "task/task-1764254076932-bfcfb6",
-            "isMerged": false,
-            "mergeCommitHash": null,
-            "status": {
-              "staged": [],
-              "unstaged": [],
-              "untracked": [],
-              "capturedAt": 1764295578140
-            },
             "normalizedPath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254076932-bfcfb6",
-            "lane": 9
+            "lane": 4
           }
         ],
-        "index": 31
+        "index": 24
+      },
+      {
+        "type": "anchor",
+        "label": "[作業中] CodexCLI1: ユーザー入力: C:\\Users\\next…",
+        "branch": "task/task-1764254057952-db1b97",
+        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254057952-db1b97",
+        "parentCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
+        "lane": 11,
+        "isMerged": false,
+        "mergeCommitHash": null,
+        "statusChildren": [],
+        "isDefaultWorktree": false,
+        "renderMode": "node",
+        "shouldHide": false,
+        "tagLabel": "task/task-1764254057952-db1b97",
+        "taskId": "task-1764254057952-db1b97",
+        "taskStatus": "working",
+        "taskStatusLabel": "作業中",
+        "taskName": "CodexCLI1: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。",
+        "tooltip": "タスク: CodexCLI1: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。\nステータス: 作業中\nID: task-1764254057952-db1b97\nBranch: task/task-1764254057952-db1b97\nWorktree: C:/Users/nextj/gosiki-oss/.worktrees/task-1764254057952-db1b97",
+        "branchColor": "#4fe84f",
+        "index": 25
+      },
+      {
+        "type": "anchor",
+        "label": "[作業中] CodexCLI2: ユーザー入力: C:\\Users\\next…",
+        "branch": "task/task-1764254060258-4caee5",
+        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254060258-4caee5",
+        "parentCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
+        "lane": 10,
+        "isMerged": false,
+        "mergeCommitHash": null,
+        "statusChildren": [],
+        "isDefaultWorktree": false,
+        "renderMode": "node",
+        "shouldHide": false,
+        "tagLabel": "task/task-1764254060258-4caee5",
+        "taskId": "task-1764254060258-4caee5",
+        "taskStatus": "working",
+        "taskStatusLabel": "作業中",
+        "taskName": "CodexCLI2: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。",
+        "tooltip": "タスク: CodexCLI2: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。\nステータス: 作業中\nID: task-1764254060258-4caee5\nBranch: task/task-1764254060258-4caee5\nWorktree: C:/Users/nextj/gosiki-oss/.worktrees/task-1764254060258-4caee5",
+        "branchColor": "#e84f4f",
+        "index": 26
+      },
+      {
+        "type": "anchor",
+        "label": "[作業中] ClaudeCode1: ユーザー入力: C:\\Users\\ne…",
+        "branch": "task/task-1764254062601-2d81fc",
+        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254062601-2d81fc",
+        "parentCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
+        "lane": 9,
+        "isMerged": false,
+        "mergeCommitHash": null,
+        "statusChildren": [],
+        "isDefaultWorktree": false,
+        "renderMode": "node",
+        "shouldHide": false,
+        "tagLabel": "task/task-1764254062601-2d81fc",
+        "taskId": "task-1764254062601-2d81fc",
+        "taskStatus": "working",
+        "taskStatusLabel": "作業中",
+        "taskName": "ClaudeCode1: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。",
+        "tooltip": "タスク: ClaudeCode1: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。\nステータス: 作業中\nID: task-1764254062601-2d81fc\nBranch: task/task-1764254062601-2d81fc\nWorktree: C:/Users/nextj/gosiki-oss/.worktrees/task-1764254062601-2d81fc",
+        "branchColor": "#4f85e8",
+        "index": 27
+      },
+      {
+        "type": "anchor",
+        "label": "[作業中] ClaudeCode2: ユーザー入力: C:\\Users\\ne…",
+        "branch": "task/task-1764254064943-645ba6",
+        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254064943-645ba6",
+        "parentCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
+        "lane": 8,
+        "isMerged": false,
+        "mergeCommitHash": null,
+        "statusChildren": [],
+        "isDefaultWorktree": false,
+        "renderMode": "node",
+        "shouldHide": false,
+        "tagLabel": "task/task-1764254064943-645ba6",
+        "taskId": "task-1764254064943-645ba6",
+        "taskStatus": "working",
+        "taskStatusLabel": "作業中",
+        "taskName": "ClaudeCode2: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。",
+        "tooltip": "タスク: ClaudeCode2: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。\nステータス: 作業中\nID: task-1764254064943-645ba6\nBranch: task/task-1764254064943-645ba6\nWorktree: C:/Users/nextj/gosiki-oss/.worktrees/task-1764254064943-645ba6",
+        "branchColor": "#e84f7f",
+        "index": 28
+      },
+      {
+        "type": "anchor",
+        "label": "[作業中] GeminiCLI1: ユーザー入力: C:\\Users\\nex…",
+        "branch": "task/task-1764254067342-bd619e",
+        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254067342-bd619e",
+        "parentCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
+        "lane": 7,
+        "isMerged": false,
+        "mergeCommitHash": null,
+        "statusChildren": [],
+        "isDefaultWorktree": false,
+        "renderMode": "node",
+        "shouldHide": false,
+        "tagLabel": "task/task-1764254067342-bd619e",
+        "taskId": "task-1764254067342-bd619e",
+        "taskStatus": "working",
+        "taskStatusLabel": "作業中",
+        "taskName": "GeminiCLI1: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。",
+        "tooltip": "タスク: GeminiCLI1: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。\nステータス: 作業中\nID: task-1764254067342-bd619e\nBranch: task/task-1764254067342-bd619e\nWorktree: C:/Users/nextj/gosiki-oss/.worktrees/task-1764254067342-bd619e",
+        "branchColor": "#4fe8b8",
+        "index": 29
+      },
+      {
+        "type": "anchor",
+        "label": "[作業中] 🔍Monitor: ユーザー入力: C:\\Users\\next…",
+        "branch": "task/task-1764254076932-bfcfb6",
+        "worktreePath": "C:/Users/nextj/gosiki-oss/.worktrees/task-1764254076932-bfcfb6",
+        "parentCommitHash": "20dd3f39b7cb07d229ca27634139da24153d460b",
+        "lane": 4,
+        "isMerged": false,
+        "mergeCommitHash": null,
+        "statusChildren": [],
+        "isDefaultWorktree": false,
+        "renderMode": "node",
+        "shouldHide": false,
+        "tagLabel": "task/task-1764254076932-bfcfb6",
+        "taskId": "task-1764254076932-bfcfb6",
+        "taskStatus": "working",
+        "taskStatusLabel": "作業中",
+        "taskName": "🔍Monitor: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。",
+        "tooltip": "タスク: 🔍Monitor: ユーザー入力: C:\\Users\\nextj\\gosiki-oss\\index.html このHTMLとCSSファイルですね。トップページの内容がHTMLで作られています。ファイルの中にあるテキストに関しては変えることなく、デザインを刷新してください。いかにもAIが作りましたというデザインではなく、システム設計の思想に関連したデザインにしてください。\nステータス: 作業中\nID: task-1764254076932-bfcfb6\nBranch: task/task-1764254076932-bfcfb6\nWorktree: C:/Users/nextj/gosiki-oss/.worktrees/task-1764254076932-bfcfb6",
+        "branchColor": "#4fe84f",
+        "index": 30
       },
       {
         "type": "commit",
@@ -2820,45 +2673,19 @@
           ],
           "parent": "d265227cd62010890f87a685aa2e2f1ec73967ac",
           "refs": "",
-          "branches": [
-            "gosiki-os/task/task-1764254069711-084cc1",
-            "main",
-            "task/task-1764231019396-61b494",
-            "task/task-1764231021682-57ae51",
-            "task/task-1764231024004-9418a0",
-            "task/task-1764231026377-e72398",
-            "task/task-1764231028752-c40e88",
-            "task/task-1764231031139-61be7a",
-            "task/task-1764231033681-b39dda",
-            "task/task-1764231036206-c05fcb",
-            "task/task-1764231038723-57244a",
-            "task/task-1764231041189-971cf2",
-            "task/task-1764231043655-6c9b4c",
-            "task/task-1764231046207-6e21f8",
-            "task/task-1764231048791-e212a7",
-            "task/task-1764254057952-db1b97",
-            "task/task-1764254060258-4caee5",
-            "task/task-1764254062601-2d81fc",
-            "task/task-1764254064943-645ba6",
-            "task/task-1764254067342-bd619e",
-            "task/task-1764254069711-084cc1",
-            "task/task-1764254072096-84fff7",
-            "task/task-1764254074482-c6564c",
-            "task/task-1764254076932-bfcfb6"
-          ]
+          "branches": []
         },
         "commitHash": "c6c699929eb01fd02942ae3b3d34ac8a14a3011c",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "d265227cd62010890f87a685aa2e2f1ec73967ac",
-            "lane": 2
+            "lane": 3
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 32
+        "index": 31
       },
       {
         "type": "commit",
@@ -2873,45 +2700,19 @@
           ],
           "parent": "60b9babe5fdd705eabb3f4221d0e0647f5e8b359",
           "refs": "",
-          "branches": [
-            "gosiki-os/task/task-1764254069711-084cc1",
-            "main",
-            "task/task-1764231019396-61b494",
-            "task/task-1764231021682-57ae51",
-            "task/task-1764231024004-9418a0",
-            "task/task-1764231026377-e72398",
-            "task/task-1764231028752-c40e88",
-            "task/task-1764231031139-61be7a",
-            "task/task-1764231033681-b39dda",
-            "task/task-1764231036206-c05fcb",
-            "task/task-1764231038723-57244a",
-            "task/task-1764231041189-971cf2",
-            "task/task-1764231043655-6c9b4c",
-            "task/task-1764231046207-6e21f8",
-            "task/task-1764231048791-e212a7",
-            "task/task-1764254057952-db1b97",
-            "task/task-1764254060258-4caee5",
-            "task/task-1764254062601-2d81fc",
-            "task/task-1764254064943-645ba6",
-            "task/task-1764254067342-bd619e",
-            "task/task-1764254069711-084cc1",
-            "task/task-1764254072096-84fff7",
-            "task/task-1764254074482-c6564c",
-            "task/task-1764254076932-bfcfb6"
-          ]
+          "branches": []
         },
         "commitHash": "d265227cd62010890f87a685aa2e2f1ec73967ac",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "60b9babe5fdd705eabb3f4221d0e0647f5e8b359",
-            "lane": 2
+            "lane": 3
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 33
+        "index": 32
       },
       {
         "type": "commit",
@@ -2926,45 +2727,19 @@
           ],
           "parent": "60b9babe5fdd705eabb3f4221d0e0647f5e8b359",
           "refs": "",
-          "branches": [
-            "gosiki-os/task/task-1764254069711-084cc1",
-            "main",
-            "task/task-1764231019396-61b494",
-            "task/task-1764231021682-57ae51",
-            "task/task-1764231024004-9418a0",
-            "task/task-1764231026377-e72398",
-            "task/task-1764231028752-c40e88",
-            "task/task-1764231031139-61be7a",
-            "task/task-1764231033681-b39dda",
-            "task/task-1764231036206-c05fcb",
-            "task/task-1764231038723-57244a",
-            "task/task-1764231041189-971cf2",
-            "task/task-1764231043655-6c9b4c",
-            "task/task-1764231046207-6e21f8",
-            "task/task-1764231048791-e212a7",
-            "task/task-1764254057952-db1b97",
-            "task/task-1764254060258-4caee5",
-            "task/task-1764254062601-2d81fc",
-            "task/task-1764254064943-645ba6",
-            "task/task-1764254067342-bd619e",
-            "task/task-1764254069711-084cc1",
-            "task/task-1764254072096-84fff7",
-            "task/task-1764254074482-c6564c",
-            "task/task-1764254076932-bfcfb6"
-          ]
+          "branches": []
         },
         "commitHash": "154a7b95202212fbb3e1c68f2879907a4b349a16",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "60b9babe5fdd705eabb3f4221d0e0647f5e8b359",
-            "lane": 2
+            "lane": 3
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 34
+        "index": 33
       },
       {
         "type": "commit",
@@ -2979,45 +2754,19 @@
           ],
           "parent": "7ef14d3b04af40d248e44e04bfc3800315ce3e9d",
           "refs": "",
-          "branches": [
-            "gosiki-os/task/task-1764254069711-084cc1",
-            "main",
-            "task/task-1764231019396-61b494",
-            "task/task-1764231021682-57ae51",
-            "task/task-1764231024004-9418a0",
-            "task/task-1764231026377-e72398",
-            "task/task-1764231028752-c40e88",
-            "task/task-1764231031139-61be7a",
-            "task/task-1764231033681-b39dda",
-            "task/task-1764231036206-c05fcb",
-            "task/task-1764231038723-57244a",
-            "task/task-1764231041189-971cf2",
-            "task/task-1764231043655-6c9b4c",
-            "task/task-1764231046207-6e21f8",
-            "task/task-1764231048791-e212a7",
-            "task/task-1764254057952-db1b97",
-            "task/task-1764254060258-4caee5",
-            "task/task-1764254062601-2d81fc",
-            "task/task-1764254064943-645ba6",
-            "task/task-1764254067342-bd619e",
-            "task/task-1764254069711-084cc1",
-            "task/task-1764254072096-84fff7",
-            "task/task-1764254074482-c6564c",
-            "task/task-1764254076932-bfcfb6"
-          ]
+          "branches": []
         },
         "commitHash": "60b9babe5fdd705eabb3f4221d0e0647f5e8b359",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "7ef14d3b04af40d248e44e04bfc3800315ce3e9d",
-            "lane": 2
+            "lane": 3
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 35
+        "index": 34
       },
       {
         "type": "commit",
@@ -3032,45 +2781,19 @@
           ],
           "parent": "771bc8352122734d6696697d7e5de7c10b747b9b",
           "refs": "",
-          "branches": [
-            "gosiki-os/task/task-1764254069711-084cc1",
-            "main",
-            "task/task-1764231019396-61b494",
-            "task/task-1764231021682-57ae51",
-            "task/task-1764231024004-9418a0",
-            "task/task-1764231026377-e72398",
-            "task/task-1764231028752-c40e88",
-            "task/task-1764231031139-61be7a",
-            "task/task-1764231033681-b39dda",
-            "task/task-1764231036206-c05fcb",
-            "task/task-1764231038723-57244a",
-            "task/task-1764231041189-971cf2",
-            "task/task-1764231043655-6c9b4c",
-            "task/task-1764231046207-6e21f8",
-            "task/task-1764231048791-e212a7",
-            "task/task-1764254057952-db1b97",
-            "task/task-1764254060258-4caee5",
-            "task/task-1764254062601-2d81fc",
-            "task/task-1764254064943-645ba6",
-            "task/task-1764254067342-bd619e",
-            "task/task-1764254069711-084cc1",
-            "task/task-1764254072096-84fff7",
-            "task/task-1764254074482-c6564c",
-            "task/task-1764254076932-bfcfb6"
-          ]
+          "branches": []
         },
         "commitHash": "7ef14d3b04af40d248e44e04bfc3800315ce3e9d",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "771bc8352122734d6696697d7e5de7c10b747b9b",
-            "lane": 2
+            "lane": 3
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 36
+        "index": 35
       },
       {
         "type": "commit",
@@ -3086,49 +2809,23 @@
           ],
           "parent": "1a574c25fffaa601182064956d464ea7d1a3a17a",
           "refs": "",
-          "branches": [
-            "gosiki-os/task/task-1764254069711-084cc1",
-            "main",
-            "task/task-1764231019396-61b494",
-            "task/task-1764231021682-57ae51",
-            "task/task-1764231024004-9418a0",
-            "task/task-1764231026377-e72398",
-            "task/task-1764231028752-c40e88",
-            "task/task-1764231031139-61be7a",
-            "task/task-1764231033681-b39dda",
-            "task/task-1764231036206-c05fcb",
-            "task/task-1764231038723-57244a",
-            "task/task-1764231041189-971cf2",
-            "task/task-1764231043655-6c9b4c",
-            "task/task-1764231046207-6e21f8",
-            "task/task-1764231048791-e212a7",
-            "task/task-1764254057952-db1b97",
-            "task/task-1764254060258-4caee5",
-            "task/task-1764254062601-2d81fc",
-            "task/task-1764254064943-645ba6",
-            "task/task-1764254067342-bd619e",
-            "task/task-1764254069711-084cc1",
-            "task/task-1764254072096-84fff7",
-            "task/task-1764254074482-c6564c",
-            "task/task-1764254076932-bfcfb6"
-          ]
+          "branches": []
         },
         "commitHash": "771bc8352122734d6696697d7e5de7c10b747b9b",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "1a574c25fffaa601182064956d464ea7d1a3a17a",
-            "lane": 2
+            "lane": 3
           },
           {
             "hash": "09f2b0e878120d46274a791c038bcd9e2b500017",
-            "lane": 7
+            "lane": 6
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 37
+        "index": 36
       },
       {
         "type": "commit",
@@ -3143,45 +2840,19 @@
           ],
           "parent": "563b681b3b9f83fb21761f86df1abd70231755d1",
           "refs": "",
-          "branches": [
-            "gosiki-os/task/task-1764254069711-084cc1",
-            "main",
-            "task/task-1764231019396-61b494",
-            "task/task-1764231021682-57ae51",
-            "task/task-1764231024004-9418a0",
-            "task/task-1764231026377-e72398",
-            "task/task-1764231028752-c40e88",
-            "task/task-1764231031139-61be7a",
-            "task/task-1764231033681-b39dda",
-            "task/task-1764231036206-c05fcb",
-            "task/task-1764231038723-57244a",
-            "task/task-1764231041189-971cf2",
-            "task/task-1764231043655-6c9b4c",
-            "task/task-1764231046207-6e21f8",
-            "task/task-1764231048791-e212a7",
-            "task/task-1764254057952-db1b97",
-            "task/task-1764254060258-4caee5",
-            "task/task-1764254062601-2d81fc",
-            "task/task-1764254064943-645ba6",
-            "task/task-1764254067342-bd619e",
-            "task/task-1764254069711-084cc1",
-            "task/task-1764254072096-84fff7",
-            "task/task-1764254074482-c6564c",
-            "task/task-1764254076932-bfcfb6"
-          ]
+          "branches": []
         },
         "commitHash": "1a574c25fffaa601182064956d464ea7d1a3a17a",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "563b681b3b9f83fb21761f86df1abd70231755d1",
-            "lane": 2
+            "lane": 3
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 38
+        "index": 37
       },
       {
         "type": "commit",
@@ -3196,45 +2867,19 @@
           ],
           "parent": "563b681b3b9f83fb21761f86df1abd70231755d1",
           "refs": "",
-          "branches": [
-            "gosiki-os/task/task-1764254069711-084cc1",
-            "main",
-            "task/task-1764231019396-61b494",
-            "task/task-1764231021682-57ae51",
-            "task/task-1764231024004-9418a0",
-            "task/task-1764231026377-e72398",
-            "task/task-1764231028752-c40e88",
-            "task/task-1764231031139-61be7a",
-            "task/task-1764231033681-b39dda",
-            "task/task-1764231036206-c05fcb",
-            "task/task-1764231038723-57244a",
-            "task/task-1764231041189-971cf2",
-            "task/task-1764231043655-6c9b4c",
-            "task/task-1764231046207-6e21f8",
-            "task/task-1764231048791-e212a7",
-            "task/task-1764254057952-db1b97",
-            "task/task-1764254060258-4caee5",
-            "task/task-1764254062601-2d81fc",
-            "task/task-1764254064943-645ba6",
-            "task/task-1764254067342-bd619e",
-            "task/task-1764254069711-084cc1",
-            "task/task-1764254072096-84fff7",
-            "task/task-1764254074482-c6564c",
-            "task/task-1764254076932-bfcfb6"
-          ]
+          "branches": []
         },
         "commitHash": "09f2b0e878120d46274a791c038bcd9e2b500017",
         "lane": 0,
         "parentLinks": [
           {
             "hash": "563b681b3b9f83fb21761f86df1abd70231755d1",
-            "lane": 2
+            "lane": 3
           }
         ],
-        "primaryBranchName": "main",
         "branchColor": "#4f85e8",
         "branchTags": [],
-        "index": 39
+        "index": 38
       },
       {
         "type": "commit",
@@ -3247,50 +2892,117 @@
           "parents": [],
           "parent": null,
           "refs": "",
-          "branches": [
-            "gosiki-os/task/task-1764254069711-084cc1",
-            "main",
-            "task/task-1764231019396-61b494",
-            "task/task-1764231021682-57ae51",
-            "task/task-1764231024004-9418a0",
-            "task/task-1764231026377-e72398",
-            "task/task-1764231028752-c40e88",
-            "task/task-1764231031139-61be7a",
-            "task/task-1764231033681-b39dda",
-            "task/task-1764231036206-c05fcb",
-            "task/task-1764231038723-57244a",
-            "task/task-1764231041189-971cf2",
-            "task/task-1764231043655-6c9b4c",
-            "task/task-1764231046207-6e21f8",
-            "task/task-1764231048791-e212a7",
-            "task/task-1764254057952-db1b97",
-            "task/task-1764254060258-4caee5",
-            "task/task-1764254062601-2d81fc",
-            "task/task-1764254064943-645ba6",
-            "task/task-1764254067342-bd619e",
-            "task/task-1764254069711-084cc1",
-            "task/task-1764254072096-84fff7",
-            "task/task-1764254074482-c6564c",
-            "task/task-1764254076932-bfcfb6"
-          ]
+          "branches": []
         },
         "commitHash": "563b681b3b9f83fb21761f86df1abd70231755d1",
         "lane": 0,
         "parentLinks": [],
+        "branchColor": "#4f85e8",
+        "branchTags": [],
+        "index": 39
+      },
+      {
+        "type": "commit",
+        "label": "feat: add automated npm publishing via GitHub Actions",
+        "commit": {
+          "hash": "ca16ead1b5e0f143345c4e13565acc187cb410f6",
+          "subject": "feat: add automated npm publishing via GitHub Actions",
+          "author": "gosiki-org",
+          "timestamp": 1764269807,
+          "parents": [
+            "a9e12d95de698853b4e2d35c447cc61b69d92b13"
+          ],
+          "parent": "a9e12d95de698853b4e2d35c447cc61b69d92b13",
+          "refs": "HEAD -> main",
+          "branches": [
+            "HEAD -> main",
+            "main"
+          ]
+        },
+        "commitHash": "ca16ead1b5e0f143345c4e13565acc187cb410f6",
+        "lane": 0,
+        "parentLinks": [
+          {
+            "hash": "a9e12d95de698853b4e2d35c447cc61b69d92b13",
+            "lane": 2
+          }
+        ],
         "primaryBranchName": "main",
         "branchColor": "#4f85e8",
         "branchTags": [],
         "index": 40
       },
       {
+        "type": "commit",
+        "label": "On main: Temporary stash for PR merge",
+        "commit": {
+          "hash": "94bd17a42119a7a5ccf9e693bdd6382a3dd9796c",
+          "subject": "On main: Temporary stash for PR merge",
+          "author": "gosiki-org",
+          "timestamp": 1764268943,
+          "parents": [
+            "02bede3d576b744c618aebc466c95ef86d913e4f",
+            "c9f65db88c27fb4e067d322933acc37754b6ac21"
+          ],
+          "parent": "02bede3d576b744c618aebc466c95ef86d913e4f",
+          "refs": "refs/stash",
+          "branches": [
+            "refs/stash"
+          ]
+        },
+        "commitHash": "94bd17a42119a7a5ccf9e693bdd6382a3dd9796c",
+        "lane": 1,
+        "parentLinks": [
+          {
+            "hash": "02bede3d576b744c618aebc466c95ef86d913e4f",
+            "lane": 3
+          },
+          {
+            "hash": "c9f65db88c27fb4e067d322933acc37754b6ac21",
+            "lane": 9
+          }
+        ],
+        "primaryBranchName": "refs/stash",
+        "branchColor": "#e84f7f",
+        "branchTags": [],
+        "index": 41
+      },
+      {
+        "type": "commit",
+        "label": "index on main: 02bede3 feat: Phase 1a v0.1.1 - Add Demo CLI …",
+        "commit": {
+          "hash": "c9f65db88c27fb4e067d322933acc37754b6ac21",
+          "subject": "index on main: 02bede3 feat: Phase 1a v0.1.1 - Add Demo CLI and Examples",
+          "author": "gosiki-org",
+          "timestamp": 1764268943,
+          "parents": [
+            "02bede3d576b744c618aebc466c95ef86d913e4f"
+          ],
+          "parent": "02bede3d576b744c618aebc466c95ef86d913e4f",
+          "refs": "",
+          "branches": []
+        },
+        "commitHash": "c9f65db88c27fb4e067d322933acc37754b6ac21",
+        "lane": 0,
+        "parentLinks": [
+          {
+            "hash": "02bede3d576b744c618aebc466c95ef86d913e4f",
+            "lane": 3
+          }
+        ],
+        "branchColor": "#4f85e8",
+        "branchTags": [],
+        "index": 42
+      },
+      {
         "type": "empty",
         "label": "初期状態 (初回コミット以前)",
         "files": [],
         "marker": "pre-history",
-        "index": 41
+        "index": 43
       }
     ]
   },
   "projectRoot": "C:/Users/nextj/gosiki-oss",
-  "savedAt": 1764295589787
+  "savedAt": 1764296525074
 }

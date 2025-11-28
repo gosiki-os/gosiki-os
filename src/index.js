@@ -13,14 +13,18 @@ const REGISTRY_DIR = join(homedir(), '.gosiki-os');
 const REGISTRY_FILE = join(REGISTRY_DIR, 'port-registry.json');
 
 /**
- * Get display path with username masked
+ * Get display path with optional username masking for demo mode
  * @param {string} path - Full file path
- * @returns {string} Path with username replaced by <username>
+ * @returns {string} Path with username replaced by <username> in demo mode
  */
 function getDisplayPath(path) {
-  const home = homedir();
-  const username = home.split(/[/\\]/).pop();
-  return path.replace(username, '<username>');
+  // Only mask username in demo mode
+  if (process.env.GOSIKI_DEMO_MODE === 'true') {
+    const home = homedir();
+    const username = home.split(/[/\\]/).pop();
+    return path.replace(username, '<username>');
+  }
+  return path;
 }
 
 /**

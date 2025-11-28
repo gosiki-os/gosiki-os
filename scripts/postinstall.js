@@ -2,9 +2,7 @@
 import { homedir } from 'os';
 import { join } from 'path';
 
-const home = homedir();
-const username = home.split(/[/\\]/).pop();
-const registryPath = join(home, '.gosiki-os', 'port-registry.json').replace(username, '<username>');
+const registryPath = join(homedir(), '.gosiki-os', 'port-registry.json');
 
 console.log('✅ @gosiki-os/port-manager installed successfully');
 console.log(`📁 Registry location: ${registryPath}`);
