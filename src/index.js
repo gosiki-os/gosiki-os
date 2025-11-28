@@ -47,20 +47,53 @@ function saveRegistry(registry) {
 }
 
 /**
- * Check if a port is free
+ * Get PID of process using a port
  * @param {number} port - Port number to check
- * @returns {Promise<boolean>}
+ * @returns {Promise<number|null>}
  */
-async function isPortFree(port) {
+async function getPortPid(port) {
   try {
     const result = execSync(
-      `powershell -Command "(Get-NetTCPConnection -LocalPort ${port} -ErrorAction SilentlyContinue) -eq $null"`,
+      `powershell -Command "Get-NetTCPConnection -LocalPort ${port} -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess"`,
       { stdio: 'pipe' }
     );
-    return result.toString().trim() === 'True';
+    const pid = parseInt(result.toString().trim());
+    return isNaN(pid) ? null : pid;
   } catch {
-    return false;
+    return null;
   }
+}
+
+/**
+ * Check if a port is free (both system and registry)
+ * @param {number} port - Port number to check
+ * @param {Object} registry - Registry data
+ * @returns {Promise<boolean>}
+ */
+async function isPortFree(port, registry) {
+  // Check system level (is any process using this port?)
+  const systemPid = await getPortPid(port);
+  if (systemPid !== null) {
+    return false;  // Port is in use by system
+  }
+
+  // Check registry (is this port allocated by Gosiki OS?)
+  const managed = registry.allocations[port];
+  if (managed) {
+    // Check if the process is still alive
+    try {
+      process.kill(managed.pid, 0);  // Signal 0 checks if process exists
+      return false;  // Process exists, port is still allocated
+    } catch {
+      // Process doesn't exist, port allocation is stale
+      // Remove stale entry
+      delete registry.allocations[port];
+      saveRegistry(registry);
+      return true;  // Port is free (stale entry removed)
+    }
+  }
+
+  return true;  // Port is free
 }
 
 /**
@@ -73,16 +106,31 @@ export async function acquirePort(preferred = 3000, range = 100) {
   const registry = loadRegistry();
 
   for (let port = preferred; port < preferred + range; port++) {
-    if (await isPortFree(port)) {
-      // Record allocation in registry
+    if (await isPortFree(port, registry)) {
+      // Port is free, allocate it
       registry.allocations[port] = {
         allocatedAt: new Date().toISOString(),
         pid: process.pid
       };
       saveRegistry(registry);
 
-      console.log(`Port ${port} acquired`);
+      console.log(`Port ${port} acquired ✓`);
       return port;
+    } else {
+      // Port is in use - check why
+      const systemPid = await getPortPid(port);
+      const managed = registry.allocations[port];
+
+      if (systemPid && managed) {
+        // Both system and registry
+        console.log(`Checking port ${port}... in use (PID: ${managed.pid}) [managed]`);
+      } else if (managed) {
+        // Registry only (process might have ended but port reallocated)
+        console.log(`Checking port ${port}... in use (PID: ${managed.pid}) [managed]`);
+      } else {
+        // System only
+        console.log(`Checking port ${port}... in use [not managed]`);
+      }
     }
   }
 
@@ -142,14 +190,46 @@ if (isMainModule) {
     await releasePort(port);
 
   } else if (command === '--list' || command === '-l') {
-    const allocations = await listAllocations();
-    if (allocations.length === 0) {
-      console.log('No port allocations');
-    } else {
-      console.log('Port Allocations:');
-      allocations.forEach(({ port, allocatedAt, pid }) => {
-        console.log(`  ${port} - allocated at ${allocatedAt} (PID: ${pid})`);
-      });
+    const registry = loadRegistry();
+
+    // Get all ports used by system in common ranges
+    const portsToCheck = new Set();
+
+    // Add managed ports
+    Object.keys(registry.allocations).forEach(port => {
+      portsToCheck.add(parseInt(port));
+    });
+
+    // Add common port range (3000-3020 for development)
+    for (let port = 3000; port <= 3020; port++) {
+      portsToCheck.add(port);
+    }
+
+    console.log('Port Status:');
+    const sortedPorts = Array.from(portsToCheck).sort((a, b) => a - b);
+    let hasAnyPort = false;
+
+    for (const port of sortedPorts) {
+      const systemPid = await getPortPid(port);
+      const managed = registry.allocations[port];
+
+      if (systemPid && managed) {
+        // Managed by Gosiki and currently in use
+        console.log(`  ${port} - managed by Gosiki (PID: ${managed.pid}) ✓`);
+        hasAnyPort = true;
+      } else if (systemPid) {
+        // In use but not managed by Gosiki
+        console.log(`  ${port} - in use by system [not managed]`);
+        hasAnyPort = true;
+      } else if (managed) {
+        // Managed but process ended (stale entry)
+        console.log(`  ${port} - managed but process ended (PID: ${managed.pid}) [stale]`);
+        hasAnyPort = true;
+      }
+    }
+
+    if (!hasAnyPort) {
+      console.log('  No ports in use');
     }
 
   } else if (command === '--help' || command === '-h') {

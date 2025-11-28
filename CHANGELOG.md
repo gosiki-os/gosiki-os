@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3] - 2025-11-28
+
+### Added
+- Enhanced port status display showing PID for managed ports
+- System-wide port status visibility in `--list` command
+- Distinction between managed and not managed ports in output
+
+### Fixed
+- **Critical**: Registry check now prevents double port allocation
+- Port allocation now verifies both system AND registry before assigning ports
+- Automatic cleanup of stale registry entries when processes end
+
 ## [0.1.2] - 2025-11-28
 
 ### Fixed
