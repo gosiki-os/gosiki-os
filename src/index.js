@@ -257,7 +257,9 @@ if (isMainModule) {
 
   } else if (command === '--help' || command === '-h') {
     console.log(`
-@gosiki-os/port-manager v0.1.3
+@gosiki-os/port-manager v0.1.4
+
+📁 Registry: ${getDisplayPath(REGISTRY_FILE)}
 
 Usage:
   npx @gosiki-os/port-manager [port] [--label <name>]  Acquire a port (default: 3000)
